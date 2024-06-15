@@ -1,6 +1,7 @@
 ---
 layout: default
-title: [Exemple]
+title: [Exposition de l'art italien de Cimabue à Tiepolo]
+description: [Cultutal Event]
 ---
 
 ## Welcome to another page
