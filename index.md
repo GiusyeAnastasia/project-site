@@ -1,7 +1,6 @@
----
+
 title: [MICHELANGELO BUONARROTI] 
 description: [between Rome and Florence.]
----
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
