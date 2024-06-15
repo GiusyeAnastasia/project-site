@@ -1,7 +1,5 @@
 ---
-layout: default
-
-## title: [Exposition de l'art italien de Cimabue à Tiepolo]
+title: [Exposition de l'art italien de Cimabue à Tiepolo]
 description: [Cultutal Event]
 ---
 In order to ask the question "What are the cultural events associated with the artist "Michelangelo Buonarroti" in Rome?" I used the following query:
