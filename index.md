@@ -1,5 +1,5 @@
----
-layout: "MICHELANGELO BUONARROTI" between Rome and Florence.
+---"MICHELANGELO BUONARROTI" between Rome and Florence
+layout: Default .
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
