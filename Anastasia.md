@@ -43,9 +43,7 @@ rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
 **Research using Large Language Models**
 
 |   Question        |   ChatGPT        |   Gemini |
-
 |   :-------------   |   :------------------   |   :------   |
-
 |   Cultural event: Exposition de l'art italien de Cimabue à Tiepolo 
 Artist: Michelangelo Buonarotti 
 Q: What does this cultural event represent?   |   ,,,   |   mmk   |
