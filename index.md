@@ -2,10 +2,10 @@
 title: [MICHELANGELO BUONARROTI] 
 description: [between Rome and Florence.]
 ---
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+This WebSite is made by...
 
-[Individual Work](./Giusy.html) 
-[Individual Work](./Anastasia.html)
+[Giusy Cadili](./Giusy.html) 
+[Anastasia Serdiuk](./Anastasia.html)
 
 There should be whitespace between paragraphs.
 
