@@ -83,9 +83,13 @@ FILTER(REGEX(?CulturalEntityLabel , " Pietà ","i"))}
 ```
 This artwork wasn't found in ArCo
 
-Triple connecting the entity to an existing subject
+**Triple connecting the entity to an existing subject**
+
 _artwork 1_
+
 https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html cis:involvesCulturalEntity https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900286607.html
+
 _artwork 2_
+
 https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html cis:involvesCulturalEntity https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/Pietà.html
 
