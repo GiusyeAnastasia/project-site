@@ -1,6 +1,6 @@
 ---
 layout: default
-title: .[MICHELANGELO BUONARROTI] 
+title: [MICHELANGELO BUONARROTI] 
 description: [between Rome and Florence.]
 ---
 
