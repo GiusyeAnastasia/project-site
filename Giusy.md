@@ -5,22 +5,22 @@ description: [Cultutal Event]
 ---
 
 # DESCRIZIONE CON SPARQL
+Spiegazione
 
-
+```js
+PREFIX ce: <https://w3id.org/arco/resource/CulturalEvent/>
+DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124 (b9120f9e4fde2d9803c13dd4f8732093)
+}
+```
 
 [Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+ce%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalEvent%2F%3E%0D%0ADESCRIBE+ce%3A15bc9a7db40a4e86fd2d95b53c533124&format=text%2Fhtml&timeout=0&signal_void=on)
 
-[back](./)
 
-##### Header 5
+# Large Language Models
+## Comparing CHAT GPT and GEMINI
+spiegazione
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
+| CHAT GPT       | head two          | three |
 |:-------------|:------------------|:------|
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
@@ -90,3 +90,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+[back](./)
