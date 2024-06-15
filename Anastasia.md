@@ -20,7 +20,7 @@ FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 ?place a cis:GeographicalFeature ;
 rdfs:label "Roma"}
 ```
-
+I chose to research [this event](https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html)
 
 _yay_
 
