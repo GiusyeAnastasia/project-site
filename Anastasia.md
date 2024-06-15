@@ -43,6 +43,7 @@ rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
 **Research using Large Language Models**
 
 |   Question        |   ChatGPT        |   Gemini |
+
 |   :-------------   |   :------------------   |   :------   |
 
 Next, I check if the artworks found by the AI are in ArCo.
