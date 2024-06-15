@@ -6,7 +6,7 @@ description: [between Rome and Florence.]
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[Individual Work](./Giusy.html).
 
 There should be whitespace between paragraphs.
 
