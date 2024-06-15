@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: "MICHELANGELO BUONARROTI" between Rome and Florence.
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -10,10 +10,24 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Step 1
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+First we make sure that the artist "Michelangelo Buonarroti" is present in the ArCo database.
 
+```PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cpv: <https://w3id.org/italia/onto/CPV/>
+
+ASK
+WHERE
+{
+?subject a cpv:Person;
+                 rdfs:label ?label
+
+FILTER(REGEX(?label ,"Buonarroti Michelangelo","i"))
+}
+```
+[Result](.https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+cpv%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FCPV%2F%3E%0D%0A%0D%0AASK%0D%0AWHERE%0D%0A%7B%0D%0A%3Fsubject+a+cpv%3APerson%3B%0D%0A+++++++++++++++++rdfs%3Alabel+%3Flabel%0D%0A%0D%0AFILTER%28REGEX%28%3Flabel+%2C%22Buonarroti+Michelangelo%22%2C%22i%22%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
 ## Header 2
 
 > This is a blockquote following a header.
