@@ -1,6 +1,6 @@
 ---
 layout: default
-title:[Exemple]
+title: [Exemple]
 ---
 
 ## Welcome to another page
