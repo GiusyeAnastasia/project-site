@@ -4,14 +4,20 @@ layout: default
 description: [Cultutal Event]
 ---
 In order to ask the question "What are the cultural events associated with the artist "Michelangelo Buonarroti" in Rome?" I used the following query:
+```js
 PREFIX cis: <http://dati.beniculturali.it/cis/>
+
 PREFIX clv: <https://w3id.org/italia/onto/CLV/>
+
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
 SELECT DISTINCT ?culturalevent ?eventlabel ?author ?authorlabel ?place
-WHERE
-{
+
+WHERE{
 ?culturalevent a cis:CulturalEvent ;
  rdfs:label ?eventlabel .
 ?culturalevent cis:involvesCulturalEntity ?culturalEntity .
@@ -20,7 +26,7 @@ WHERE
 FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 ?place a cis:GeographicalFeature ;
 rdfs:label "Roma"}
-
+```
 
 
 _yay_
