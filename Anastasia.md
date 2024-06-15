@@ -41,8 +41,51 @@ rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
 [result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+%0D%0A%0D%0ACONSTRUCT+%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0AWHERE++%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
 **Research using Large Language Models**
+
 | Question        | ChatGPT        | Gemini |
 |:-------------|:------------------|:------|
 
+Next, I check if the artworks found by the AI are in ArCo.
 
+_artwork 1_
+```js
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+PREFIX arco: <https://w3id.org/arco/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?culturalEntity ?CulturalEntityLabel
+WHERE {
+?culturalevent a cis:CulturalEvent ;
+                          cis:involvesCulturalEntity ?culturalEntity .
+?culturalEntity a-cd:hasAuthor ?author .
+?author rdfs:label ?authorlabel
+FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
+?culturalEntity rdfs:label ?CulturalEntityLabel
+FILTER(REGEX(?CulturalEntityLabel , "David","i"))}
+```
+[result](https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900286607.html)
+
+_artwork 2_
+```js
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+PREFIX arco: <https://w3id.org/arco/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?culturalEntity ?CulturalEntityLabel
+WHERE {
+?culturalevent a cis:CulturalEvent ;
+                          cis:involvesCulturalEntity ?culturalEntity .
+?culturalEntity a-cd:hasAuthor ?author .
+?author rdfs:label ?authorlabel
+FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
+?culturalEntity rdfs:label ?CulturalEntityLabel
+FILTER(REGEX(?CulturalEntityLabel , " Pietà ","i"))}
+```
+This artwork wasn't found in ArCo
+
+Triple connecting the entity to an existing subject
+_artwork 1_
+https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html cis:involvesCulturalEntity https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/0900286607.html
+_artwork 2_
+https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html cis:involvesCulturalEntity https://dati.beniculturali.it/lodview-arco/resource/HistoricOrArtisticProperty/Pietà.html
 
