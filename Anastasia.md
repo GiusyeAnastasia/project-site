@@ -42,8 +42,29 @@ rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
 ```
 [result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+%0D%0A%0D%0ACONSTRUCT+%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0AWHERE++%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
-**Research using Large Language Models**
 
+## Research using Large Language Models
+
+After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
+
+### Question 1
+
+*Cultural Property: Basilica di San Lorenzo (Firenze)*
+
+*Author: Michelangelo Buonarroti*
+
+*Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?*  
+
+<table style="text-align: center;">
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+        <td> <p>Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include:</p>
 
   
 
