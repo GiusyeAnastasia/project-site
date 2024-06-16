@@ -283,7 +283,7 @@ From Michelangelo to Tiepolo:</p>
 
  <p> <arco:E21_Person rdf:about="http://example.org/michelangelo"></p>
   <p>  <arco:P1_is_identified_by></p>
-  <p>    <rdf:Literal xml:lang="en">Michelangelo Buonarotti</rdf:Literal></p>
+  <p>    <rdf:Literal xml:lang="en">Michelangelo Buonarotti</rdf:Literal> </p>
   <p>  </arco:P1_is_identified_by></p>
   <p>  <arco:P7_participates_in></p>
   <p>    <arco:E22_Exhibition rdf:about="http://example.org/exposition_art_italien"></p>
@@ -306,18 +306,16 @@ From Michelangelo to Tiepolo:</p>
 <p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p> </td> 
 
 
-    
-  </tr>
+
+   </tr>
   
-</tbody>
+ </tbody>
 
-</table>
+  </table>
   
 
 
-
-
-Next, I check if the artworks found by the AI are in ArCo.
+## Next, I check if the artworks found by the AI are in ArCo.
 
 _artwork 1_
 ```js
@@ -355,7 +353,7 @@ FILTER(REGEX(?CulturalEntityLabel , " Pietà ","i"))}
 ```
 This artwork wasn't found in ArCo
 
-**Triple connecting the entity to an existing subject**
+## Triple connecting the entity to an existing subject
 
 _artwork 1_
 
