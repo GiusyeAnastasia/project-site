@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Michelangelo architetto a san Lorenzo: quattro problemi aperti]
+title: [Michelangelo architetto a San Lorenzo: quattro problemi aperti]
 description: [Cultutal Event]
 ---
 <span style="font-family: 'Century Gothic'; font-size: 30px; color: black;">Michelangelo architetto a san Lorenzo: quattro problemi aperti</span>
