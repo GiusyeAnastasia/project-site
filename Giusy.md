@@ -32,9 +32,11 @@ spiegazione
   </thead>
   <tbody>
    <tr>
-    <td>Cultural Property: Basilica di San Lorenzo (Firenze)
-         Author: Michelangelo Buonarroti
-         Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</td>
+    <td>
+      <p>Cultural Property: Basilica di San Lorenzo (Firenze)</p>
+      <p>Author: Michelangelo Buonarroti</p>
+      <p>Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
+    </td>
    
     <td>Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include: The Medici Chapels (Cappelle Medicee): Michelangelo designed and partially executed the sculptures and architectural elements for the New Sacristy (Sagrestia Nuova), which houses the tombs of several members of the Medici family. Key works include: Tomb of Lorenzo de' Medici (Duke of Urbino): Featuring the statues "Dusk" and "Dawn" flanking the central figure of Lorenzo. Tomb of Giuliano de' Medici (Duke of Nemours): Featuring the statues "Night" and "Day" flanking the central figure of Giuliano. The Laurentian Library (Biblioteca Laurenziana): While not a traditional artwork, Michelangelo designed the architecture and decorative elements of this library attached to the basilica. It is renowned for its innovative stair design and interior space. These works reflect Michelangelo's mastery in sculpture and architecture and are key attractions in the Basilica di San Lorenzo, showcasing his deep connection with the Medici family and their patronage./td>
    
