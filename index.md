@@ -162,3 +162,13 @@ FILTER( REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 [Individual work of Giusy Cadili](./Giusy.html) 
 
 [Individual work of Anastasia Serdiuk](./Anastasia.html)
+
+
+# CHALLENGES 
+
+During the implementation of our project, we faced several challenges:
+
+**Mastering SPARQL Queries**: One major hurdle was learning the complex SPARQL language and syntax to ensure our queries were accurate. This required extensive research and dedicated training sessions to grasp SPARQL’s intricacies and best practices.
+**Developing an Engaging Website**: Creating a user-friendly and visually appealing website required a strategic approach. By leveraging modern web development frameworks and responsive design principles, we collaborated on design and content creation.
+**Use of Large Language Models (LLMs)**: Our project involved using prompting techniques to motivate, describe, and analyze the differences between outputs of various LLMs. This exploration provided valuable insights into the capabilities and nuances of different language models, enriching our understanding of natural language processing technologies.
+
