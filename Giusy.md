@@ -3,9 +3,9 @@ layout: default
 title: [Michelangelo architetto a san Lorenzo: quattro problemi aperti]
 description: [Cultutal Event]
 ---
-<span style="font-size: 30px; color: cyan;">Michelangelo architetto a san Lorenzo: quattro problemi aperti</span>
+<span style="font-family: 'Century Gothic'; font-size: 30px; color: black;">Michelangelo architetto a san Lorenzo: quattro problemi aperti</span>
 
-<span style="font-family: 'Lucida Sans'; font-size: 20px; color: cyan;">CulturalEvent</span>
+<span style="font-family: 'Century Gothic'; font-size: 20px; color: black;">CulturalEvent</span>
 
 # DESCRIZIONE CON SPARQL
 Spiegazione
