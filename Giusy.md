@@ -27,7 +27,7 @@ Centered around Michelangelo's drawings from the Casa Buonarroti, the exhibition
 
 
 
-# DESCRIZIONE CON SPARQL
+# SPARQL QUERY
 I wanted to begin by retrieving all the information about my event and decided to use the SPARQL DESCRIVE query:
 
 **Purpose of the Query**
