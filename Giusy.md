@@ -21,10 +21,9 @@ DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124 (b9120f9e4fde2d9803c13dd4f8732093)
 After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
 
 ### Question 1
-<p>Cultural Property: Basilica di San Lorenzo (Firenze)</p>
-<p>Author: Michelangelo Buonarroti</p>
-<p>Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
-    
+*<p>Cultural Property: Basilica di San Lorenzo (Firenze)</p>*
+*<p>Author: Michelangelo Buonarroti</p>*
+*<p>Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>*    
 
 <table style="text-align: center;">
   <thead>
@@ -56,7 +55,7 @@ After gathering all the information, the next steps involve enriching the data a
 
 ### Question 2
 
- Can you extract exactly what the main topics are based on this description?
+*Can you extract exactly what the main topics are based on this description?*
 
 <table style="text-align: center;">
   <thead>
@@ -90,7 +89,7 @@ After gathering all the information, the next steps involve enriching the data a
 </table>
 
 ### Question 3
-   Could you transform this description into RDF format and use Arco ontology?
+   *Could you transform this description into RDF format and use Arco ontology?*
 
  <table style="text-align: center;">
   <thead>
