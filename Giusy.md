@@ -18,38 +18,50 @@ DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124 (b9120f9e4fde2d9803c13dd4f8732093)
 
 # Large Language Models
 ## Comparing CHAT GPT and GEMINI
-spiegazione
+After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
 
-
+### Question 1
+Cultural Property: Basilica di San Lorenzo (Firenze)
+Author: Michelangelo Buonarroti
+Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
+    
 
 <table style="text-align: center;">
   <thead>
     <tr>
-      <th>Question</th>
       <th>CHAT GPT</th>
       <th>GEMINI</th>
   </tr>
   </thead>
   <tbody>
    <tr>
-    <td>
-      <p>Cultural Property: Basilica di San Lorenzo (Firenze)</p>
-      <p>Author: Michelangelo Buonarroti</p>
-      <p>Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
-    </td>
-   
-    <td> Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include: The Medici Chapels (Cappelle Medicee): Michelangelo designed and partially executed the sculptures and architectural elements for the New Sacristy (Sagrestia Nuova), which houses the tombs of several members of the Medici family. Key works include: Tomb of Lorenzo de' Medici (Duke of Urbino): Featuring the statues "Dusk" and "Dawn" flanking the central figure of Lorenzo. Tomb of Giuliano de' Medici (Duke of Nemours): Featuring the statues "Night" and "Day" flanking the central figure of Giuliano. The Laurentian Library (Biblioteca Laurenziana): While not a traditional artwork, Michelangelo designed the architecture and decorative elements of this library attached to the basilica. It is renowned for its innovative stair design and interior space. These works reflect Michelangelo's mastery in sculpture and architecture and are key attractions in the Basilica di San Lorenzo, showcasing his deep connection with the Medici family and their patronage. </td>
+        <td> Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include: The Medici Chapels (Cappelle Medicee): Michelangelo designed and partially executed the sculptures and architectural elements for the New Sacristy (Sagrestia Nuova), which houses the tombs of several members of the Medici family. Key works include: Tomb of Lorenzo de' Medici (Duke of Urbino): Featuring the statues "Dusk" and "Dawn" flanking the central figure of Lorenzo. Tomb of Giuliano de' Medici (Duke of Nemours): Featuring the statues "Night" and "Day" flanking the central figure of Giuliano. The Laurentian Library (Biblioteca Laurenziana): While not a traditional artwork, Michelangelo designed the architecture and decorative elements of this library attached to the basilica. It is renowned for its innovative stair design and interior space. These works reflect Michelangelo's mastery in sculpture and architecture and are key attractions in the Basilica di San Lorenzo, showcasing his deep connection with the Medici family and their patronage. 
+        </td>
    
     <td>
     <p> While Michelangelo did have plans for the Basilica di San Lorenzo, none of his final works are actually on the facade or in the main body of the church. Here's what he was involved in:</p>
     <p> •	The New Sacristy (Sagrestia Nuova): This is where Michelangelo's most famous contributions reside. He designed the entire space and sculpted the magnificent tombs of Giuliano de' Medici and Lorenzo de' Medici.</p>
     <p> •	The Facade: Michelangelo never finished the facade, but he did create several designs that can be seen at the Casa Buonarroti museum in Florence [Michelangelo's Model for the Facade of San Lorenzo]. </p>
     <p> • Hidden Sketches: There are rumors of hidden sketches by Michelangelo in a chamber beneath the Basilica, but these are not accessible to the public.</p>
-    </td>
- 
+    </td> 
   </tr>
-  <tr>
-    <td>Can you extract exactly what the main topics are based on this description?</td>
+</tbody>
+</table>
+
+  ### Question 2
+
+ Can you extract exactly what the main topics are based on this description?
+
+<table style="text-align: center;">
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr>
+   
     <td>
         <p> Based on the description provided, the main topics are: </p>
         <p> The Medici Chapels (Cappelle Medicee)</p>
@@ -68,9 +80,21 @@ spiegazione
         <p> 3.	Unconfirmed Sketches: There's a possibility of hidden sketches by Michelangelo, but they are inaccessible and their existence remains unverified.</p>
     </td> 
   </tr>
-  
+</tbody>
+</table>
+
+  ### Question 3
+   Could you transform this description into RDF format and use Arco ontology?
+
+ <table style="text-align: center;">
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+  </tr>
+  </thead>
+  <tbody>
   <tr> 
-    <td>Could you transform this description into RDF format and use Arco ontology?</td>
     <td>
       <p>@prefix arco: <https://w3id.org/arco/ontology/core/> .</p>
       <p>@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .</p>
@@ -125,8 +149,7 @@ spiegazione
       <p># Michelangelo Buonarroti</p>
             <p>ex:Michelangelo_Buonarroti rdf:type foaf:Person ;</p>
             <p>foaf:name "Michelangelo Buonarroti".</p>
-        
-      </td>
+         </td>
   
   <td>
     <p> rdf:RDF</p>
