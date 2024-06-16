@@ -7,10 +7,7 @@ description: [Cultutal Event]
 
 <span style="font-family: 'Century Gothic'; font-size: 20px; color: black;">CulturalEvent</span>
 
-
-Sure, here is the translation:
-
----
+![image about Basilica di San Lorenzo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmichelangelobuonarrotietornato.com%2F2023%2F03%2F10%2F10-marzo-1521-lo-scioglimento-del-contratto-per-la-facciata-della-basilica-di-san-lorenzo%2F&psig=AOvVaw3WjSXfqGRGZF_ON-fEpeLs&ust=1718634150616000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDgr6Gp4IYDFQAAAAAdAAAAABAJ)
 
 An Exhibition on the Unresolved Issues of Buonarroti's Work.
 
@@ -25,6 +22,8 @@ The exhibition focuses on four key moments:
 4. Finally, the creation of the Tribune of the Relics and the identification of the boundary between Michelangelo's intervention and the decorative elements of the pre-existing 15th-century counter-facade of the basilica.
 
 Centered around Michelangelo's drawings from the Casa Buonarroti, the exhibition also features works from prestigious Italian and international institutions. It utilizes computer support through three-dimensional models and digital elaborations to clarify the issues related to each theme and to highlight the extent of Michelangelo's intervention in one of the world's most famous and visited art spaces.
+
+
 
 # DESCRIZIONE CON SPARQL
 I wanted to begin by retrieving all the information about my event and decided to use the SPARQL DESCRIVE query:
