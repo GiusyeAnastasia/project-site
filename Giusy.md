@@ -28,7 +28,8 @@ Centered around Michelangelo's drawings from the Casa Buonarroti, the exhibition
 
 
 # SPARQL QUERY
-I wanted to begin by retrieving all the information about my event and decided to use the SPARQL DESCRIVE query:
+
+I wanted to begin by retrieving all the information about my event and decided to use the SPARQL DESCRIBE query:
 
 **Purpose of the Query**
 
@@ -39,16 +40,18 @@ PREFIX ce: <https://w3id.org/arco/resource/CulturalEvent/>
 DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124
 ```
 
-**What the Query Seeks to Discover**
-The query seeks to discover all the information available about the cultural event with the given identifier. The result of the query is an HTML5 document with embedded RDF statements represented using HTML+Microdata notation.
+The query seeks to discover all the information available about the cultural event with the given identifier.
 
 [Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+ce%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalEvent%2F%3E%0D%0ADESCRIBE+ce%3A15bc9a7db40a4e86fd2d95b53c533124&format=text%2Fhtml&timeout=0&signal_void=on)
 
 # Large Language Models
+
 ## Comparing CHAT GPT and GEMINI
+
 After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
 
 ### Question 1
+
 *Cultural Property: Basilica di San Lorenzo (Firenze)*
 
 *Author: Michelangelo Buonarroti*
@@ -119,6 +122,7 @@ After gathering all the information, the next steps involve enriching the data a
 </table>
 
 ### Question 3
+   
    *Could you transform this description into RDF format and use Arco ontology?*
 
  <table style="text-align: center;">
