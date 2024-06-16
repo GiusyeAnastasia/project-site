@@ -7,7 +7,7 @@ description: [Cultutal Event]
 
 <span style="font-family: 'Century Gothic'; font-size: 20px; color: black;">CulturalEvent</span>
 
-![image about Basilica di San Lorenzo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmichelangelobuonarrotietornato.com%2F2023%2F03%2F10%2F10-marzo-1521-lo-scioglimento-del-contratto-per-la-facciata-della-basilica-di-san-lorenzo%2F&psig=AOvVaw3WjSXfqGRGZF_ON-fEpeLs&ust=1718634150616000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDgr6Gp4IYDFQAAAAAdAAAAABAJ)
+![image about Basilica di San Lorenzo] (https://www.guidaturisticaperfirenze.com/wp-content/uploads/2020/11/i-luoghi-medicei-basilica-di-san-lorenzo.jpg)
 
 An Exhibition on the Unresolved Issues of Buonarroti's Work.
 
