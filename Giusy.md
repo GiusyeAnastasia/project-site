@@ -49,9 +49,11 @@ The query seeks to discover all the information available about the cultural eve
 After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
 
 ### Question 1
-<p>*Cultural Property: Basilica di San Lorenzo (Firenze)*</p>
-<p>*Author: Michelangelo Buonarroti*</p>
-<p>*Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?*</p>    
+*Cultural Property: Basilica di San Lorenzo (Firenze)*
+
+*Author: Michelangelo Buonarroti*
+
+*Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?*  
 
 <table style="text-align: center;">
   <thead>
