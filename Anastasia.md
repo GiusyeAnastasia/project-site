@@ -251,8 +251,8 @@ From Michelangelo to Tiepolo:</p>
 <p>•	Query and analyze the data.</p>
 <p>•	Integrate the data with other knowledge bases.</p>
 <p>•	Develop applications that interact with the exhibition data.</p>
-<p>This is just a basic example, and you can add more details and properties to enrich the RDF representation based on your specific needs.</p>
-        </td>
+<p>This is just a basic example, and you can add more details and properties to enrich the RDF representation based on your specific needs.</p>  </td>
+
  
     <td>
     <p> Absolutely! Here's the transformed description into RDF format using the ArCo ontology:</p>
@@ -304,6 +304,8 @@ From Michelangelo to Tiepolo:</p>
 <p>•	Replace http://example.org with your actual URIs for the exhibition, location, and person.</p>
 <p>•	You can extend this example by adding information about specific artworks presented and their creators.</p>
 <p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p> </td> 
+
+
     
   </tr>
   
@@ -311,6 +313,8 @@ From Michelangelo to Tiepolo:</p>
 
 </table>
   
+
+
 
 
 Next, I check if the artworks found by the AI are in ArCo.
