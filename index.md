@@ -8,7 +8,11 @@ This WebSite is made by...
 
 [Anastasia Serdiuk](./Anastasia.html)
 
+This project aims to explore the cultural events and works of the Italian artist Michelangelo Buonarroti. It particularly focuses on two of the cities where the artist created most of his works, Rome and Florence.
+
 ![Michelangelo Buonarroti](https://hips.hearstapps.com/hmg-prod/images/portrait-of-michelangelo-buonarroti-early-17th-cen-found-in-news-photo-1664961873.jpg?crop=1xw:0.79688xh;center,top&resize=640:*)
+
+Michelangelo Buonarroti, known simply as Michelangelo, was an Italian painter, sculptor, architect, and poet. Nicknamed the Divine Artist, he was a leading figure of the Italian Renaissance and was recognized by his contemporaries as one of the greatest artists of all time. Born in Florence and died in Rome.
 
 # Step 1
 
