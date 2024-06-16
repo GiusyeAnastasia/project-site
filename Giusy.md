@@ -22,7 +22,7 @@ spiegazione
 
 
 
-<table>
+<table style="border: 1px solid black;">
   <thead>
     <tr>
       <th>Question</th>
