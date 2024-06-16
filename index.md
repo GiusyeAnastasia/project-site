@@ -159,9 +159,9 @@ FILTER( REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 
 
 
-[Individual work of Giusy Cadili](./Giusy.html) 
+[Check the individual work of Giusy Cadili](./Giusy.html) 
 
-[Individual work of Anastasia Serdiuk](./Anastasia.html)
+[Check the individual work of Anastasia Serdiuk](./Anastasia.html)
 
 
 # CHALLENGES 
