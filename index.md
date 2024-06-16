@@ -18,9 +18,9 @@ Michelangelo Buonarroti, known simply as Michelangelo, was an Italian painter, s
 
 Through the use of the ArCo knowledge base and large language models, this project aims to explore the cultural events and works of the Italian artist Michelangelo Buonarroti. It particularly focuses on two of the cities where the artist created most of his works, Rome and Florence.
 
-## Approach
+## Methodology
 
-To achieve these objectives, we adopted a structured approach:
+To achieve these objectives, we adopted a structured methodology:
 
 1) Initial Exploration: We began by exploring the ArCo knowledge graph to identify relevant topics and concepts.
 
@@ -169,6 +169,8 @@ FILTER( REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 During the implementation of our project, we faced several challenges:
 
 **Mastering SPARQL Queries**: One major hurdle was learning the complex SPARQL language and syntax to ensure our queries were accurate. This required extensive research and dedicated training sessions to grasp SPARQL’s intricacies and best practices.
+
 **Developing an Engaging Website**: Creating a user-friendly and visually appealing website required a strategic approach. By leveraging modern web development frameworks and responsive design principles, we collaborated on design and content creation.
+
 **Use of Large Language Models (LLMs)**: Our project involved using prompting techniques to motivate, describe, and analyze the differences between outputs of various LLMs. This exploration provided valuable insights into the capabilities and nuances of different language models, enriching our understanding of natural language processing technologies.
 
