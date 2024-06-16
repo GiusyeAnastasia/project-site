@@ -7,7 +7,7 @@ description: [Cultutal Event]
 
 <span style="font-family: 'Century Gothic'; font-size: 20px; color: black;">CulturalEvent</span>
 
-![image about Basilica di San Lorenzo] (https://www.guidaturisticaperfirenze.com/wp-content/uploads/2020/11/i-luoghi-medicei-basilica-di-san-lorenzo.jpg)
+![image about Basilica di San Lorenzo](https://www.guidaturisticaperfirenze.com/wp-content/uploads/2020/11/i-luoghi-medicei-basilica-di-san-lorenzo.jpg)
 
 An Exhibition on the Unresolved Issues of Buonarroti's Work.
 
