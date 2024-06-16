@@ -143,18 +143,7 @@ FILTER( REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 
 
 
-###### Header 6
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+[Individual work of Giusy Cadili](./Giusy.html) 
 
-
-```
-The final element.
-```
-
-
+[Individual work of Anastasia Serdiuk](./Anastasia.html)
