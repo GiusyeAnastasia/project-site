@@ -8,11 +8,26 @@ This WebSite is made by...
 
 [Anastasia Serdiuk](./Anastasia.html)
 
-This project aims to explore the cultural events and works of the Italian artist Michelangelo Buonarroti. It particularly focuses on two of the cities where the artist created most of his works, Rome and Florence.
+
 
 ![Michelangelo Buonarroti](https://hips.hearstapps.com/hmg-prod/images/portrait-of-michelangelo-buonarroti-early-17th-cen-found-in-news-photo-1664961873.jpg?crop=1xw:0.79688xh;center,top&resize=640:*)
 
 Michelangelo Buonarroti, known simply as Michelangelo, was an Italian painter, sculptor, architect, and poet. Nicknamed the Divine Artist, he was a leading figure of the Italian Renaissance and was recognized by his contemporaries as one of the greatest artists of all time. Born in Florence and died in Rome.
+
+## Objectives
+
+Through the use of the ArCo knowledge base and large language models, this project aims to explore the cultural events and works of the Italian artist Michelangelo Buonarroti. It particularly focuses on two of the cities where the artist created most of his works, Rome and Florence.
+
+## Approach
+
+To achieve these objectives, we adopted a structured approach:
+
+1) Initial Exploration: We began by exploring the ArCo knowledge graph to identify relevant topics and concepts.
+
+2) Query Formulation: Based on our initial exploration, we formulated SPARQL Queries to extract specific data related to cultural events about Michelangelo Buonarroti in the cities of Rome and Florence.
+
+3) LLM Integration: We integrated and compared two Large Language Models (LLMs) such as ChatGPT and Gemini to retrieve additional information and provide context, further enriching the knowledge graph.
+
 
 # Step 1
 
