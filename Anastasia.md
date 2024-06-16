@@ -8,6 +8,7 @@ description: [Cultutal Event]
 # Cultutal Event
 ## Research in SPARQL
 
+### Query 1
 In order to ask the question "What are the cultural events associated with the artist "Michelangelo Buonarroti" in Rome?" I used the following query:
 ```js
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -28,27 +29,44 @@ rdfs:label "Roma"}
 ```
 [result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+clv%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FCLV%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0ASELECT+DISTINCT+%3Fculturalevent+%3Feventlabel+%3Fauthor+%3Fauthorlabel+%3Fplace%0D%0AWHERE%0D%0A%7B%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0A+rdfs%3Alabel+%3Feventlabel+.%0D%0A%3Fculturalevent+cis%3AinvolvesCulturalEntity+%3FculturalEntity+.%0D%0A%3FculturalEntity+a-cd%3AhasAuthor+%3Fauthor+.%0D%0A%3Fauthor+rdfs%3Alabel+%3Fauthorlabel%0D%0AFILTER%28REGEX%28%3Fauthorlabel%2C+%22Buonarroti+Michelangelo%22+%2C+%22i%22%29%29%0D%0A%3Fplace+a+cis%3AGeographicalFeature+%3B%0D%0Ardfs%3Alabel+%22Roma%22%7D+%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
-I chose to research [this event](https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html)
+### Query 2
+I produced an RDF graph that contains all the cultural properties, authoroed by Michelangelo Buonarroti which are involved in events located in Rome using the code below.
+
+```js
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX clv: <https://w3id.org/italia/onto/CLV/>
+PREFIX cis: <http://dati.beniculturali.it/cis/>
+PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
+PREFIX l0: <https://w3id.org/italia/onto/l0/>
+CONSTRUCT {
+?place a cis:GeographicalFeature ; l0:name "Roma" .
+?event a cis:CulturalEvent ; clv:hasSpatialCoverage ?place ; l0:name ?eventName ;
+cis:involvesCulturalEntity ?culturalProperty .
+?culturalProperty a-cd:hasAuthor ?author ; l0:name ?title .
+?author l0:name ?authorName
+}
+WHERE {
+?place a cis:GeographicalFeature ; rdfs:label "Roma" .
+?event a cis:CulturalEvent ; clv:hasSpatialCoverage ?place ; rdfs:label ?eventName ;
+cis:involvesCulturalEntity ?culturalProperty .
+?culturalProperty a-cd:hasAuthor ?author ; rdfs:label ?title .
+?author rdfs:label ?authorName
+FILTER(REGEX(?authorName, "Buonarroti Michelangelo", "i"))
+}
+```
+[result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+clv%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FCLV%2F%3E%0D%0APREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0APREFIX+l0%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2Fl0%2F%3E%0D%0ACONSTRUCT+%7B%0D%0A%3Fplace+a+cis%3AGeographicalFeature+%3B+l0%3Aname+%22Roma%22+.%0D%0A%3Fevent+a+cis%3ACulturalEvent+%3B+clv%3AhasSpatialCoverage+%3Fplace+%3B+l0%3Aname+%3FeventName+%3B%0D%0Acis%3AinvolvesCulturalEntity+%3FculturalProperty+.%0D%0A%3FculturalProperty+a-cd%3AhasAuthor+%3Fauthor+%3B+l0%3Aname+%3Ftitle+.%0D%0A%3Fauthor+l0%3Aname+%3FauthorName%0D%0A%7D%0D%0AWHERE+%7B%0D%0A%3Fplace+a+cis%3AGeographicalFeature+%3B+rdfs%3Alabel+%22Roma%22+.%0D%0A%3Fevent+a+cis%3ACulturalEvent+%3B+clv%3AhasSpatialCoverage+%3Fplace+%3B+rdfs%3Alabel+%3FeventName+%3B%0D%0Acis%3AinvolvesCulturalEntity+%3FculturalProperty+.%0D%0A%3FculturalProperty+a-cd%3AhasAuthor+%3Fauthor+%3B+rdfs%3Alabel+%3Ftitle+.%0D%0A%3Fauthor+rdfs%3Alabel+%3FauthorName%0D%0AFILTER%28REGEX%28%3FauthorName%2C+%22Buonarroti+Michelangelo%22%2C+%22i%22%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
+
+**I chose to research [this event](https://dati.beniculturali.it/lodview-arco/resource/CulturalEvent/49e9140e7d94d2049c1eeb6582c51e01.html)**
 ```js
 PREFIX ce: <https://w3id.org/arco/resource/CulturalEvent/>
 DESCRIBE ce:49e9140e7d94d2049c1eeb6582c51e01
 ```
 [result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+ce%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalEvent%2F%3E%0D%0ADESCRIBE+ce%3A49e9140e7d94d2049c1eeb6582c51e01%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
-```js
-CONSTRUCT { 
-?culturalevent a cis:CulturalEvent ;
-rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
-WHERE  { 
-?culturalevent a cis:CulturalEvent ;
-rdfs:label "Exposition de l'art italien de Cimabue à Tiepolo"}
-```
-[result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+%0D%0A%0D%0ACONSTRUCT+%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0AWHERE++%7B+%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0Ardfs%3Alabel+%22Exposition+de+l%27art+italien+de+Cimabue+à+Tiepolo%22%7D%0D%0A%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
-
 
 ## Research using Large Language Models
 
-After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
+After the research in SPARQL, I used Large Language Models (LLMs) in order to get further information on the event. CHAT GPT and GEMINI seem to be the most reliable LLMs. Below are the questions I asked and the answers from the two LLMs.​
 
 ### Question 1
 
@@ -306,15 +324,17 @@ From Michelangelo to Tiepolo:</p>
 <p>Note:</p>
 <p>•	Replace http://example.org with your actual URIs for the exhibition, location, and person.</p>
 <p>•	You can extend this example by adding information about specific artworks presented and their creators.</p>
-<p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p> </td> 
+<p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p></td> 
     
-  </tr>
+</tr>
   
 </tbody>
 
 </table>
+
   
-## Next, I check if the artworks found by the AI are in ArCo.
+## Creating new triples
+First, I check if the artworks found by the AI are present in ArCo.
 
 _artwork 1_
 ```js
@@ -350,9 +370,9 @@ FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 ?culturalEntity rdfs:label ?CulturalEntityLabel
 FILTER(REGEX(?CulturalEntityLabel , " Pietà ","i"))}
 ```
-This artwork wasn't found in ArCo
+**This artwork wasn't found in ArCo**
 
-## Triple connecting the entity to an existing subject
+**After the research in SPARQL, I turned to Large Language Models (LLMs) for further analysis. CHAT GPT and GEMINI seem to be the most reliable LLMs.​**
 
 _artwork 1_
 
