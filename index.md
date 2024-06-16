@@ -43,22 +43,24 @@ PREFIX cis: <http://dati.beniculturali.it/cis/>
 PREFIX a-cd: <https://w3id.org/arco/ontology/context-description/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ti: <https://w3id.org/italia/onto/TI/>
 
-SELECT DISTINCT ?culturalevent ?eventlabel ?author ?authorlabel
+SELECT DISTINCT ?culturalevent ?eventlabel ?author ?authorlabel ?year
 WHERE
 {
 ?culturalevent a cis:CulturalEvent ;
-                        rdfs:label ?eventlabel .
+                        rdfs:label ?eventlabel.
 ?culturalevent cis:involvesCulturalEntity ?culturalEntity .
 ?culturalEntity a-cd:hasAuthor ?author .
 ?author rdfs:label ?authorlabel
 
 FILTER(REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
+OPTIONAL {?culturalevent ti:time ?year}
 }
 ORDER BY ASC (?eventlabel)
 LIMIT 100
 ```
-[Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fculturalevent+%3Feventlabel+%3Fauthor+%3Fauthorlabel%0D%0AWHERE%0D%0A%7B%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0A++++++++++++++++++++++++rdfs%3Alabel+%3Feventlabel+.%0D%0A%3Fculturalevent+cis%3AinvolvesCulturalEntity+%3FculturalEntity+.%0D%0A%3FculturalEntity+a-cd%3AhasAuthor+%3Fauthor+.%0D%0A%3Fauthor+rdfs%3Alabel+%3Fauthorlabel%0D%0A%0D%0AFILTER%28REGEX%28%3Fauthorlabel%2C+%22Buonarroti+Michelangelo%22+%2C+%22i%22%29%29%0D%0A%7D%0D%0AORDER+BY+ASC+%28%3Feventlabel%29%0D%0ALIMIT+100%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
+[Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+ti%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FTI%2F%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fculturalevent+%3Feventlabel+%3Fauthor+%3Fauthorlabel+%3Fyear%0D%0AWHERE%0D%0A%7B%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+%3B%0D%0A++++++++++++++++++++++++rdfs%3Alabel+%3Feventlabel.%0D%0A%3Fculturalevent+cis%3AinvolvesCulturalEntity+%3FculturalEntity+.%0D%0A%3FculturalEntity+a-cd%3AhasAuthor+%3Fauthor+.%0D%0A%3Fauthor+rdfs%3Alabel+%3Fauthorlabel%0D%0A%0D%0AFILTER%28REGEX%28%3Fauthorlabel%2C+%22Buonarroti+Michelangelo%22+%2C+%22i%22%29%29%0D%0AOPTIONAL+%7B%3Fculturalevent+ti%3Atime+%3Fyear%7D%0D%0A%7D%0D%0AORDER+BY+ASC+%28%3Feventlabel%29%0D%0ALIMIT+100&format=text%2Fhtml&timeout=0&signal_void=on).
 
 # Step 3
 
