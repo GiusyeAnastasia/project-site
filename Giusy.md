@@ -21,9 +21,9 @@ DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124 (b9120f9e4fde2d9803c13dd4f8732093)
 After gathering all the information, the next steps involve enriching the data and utilizing Large Language Models (LLMs) for further analysis. For this comparison, I will employ two models: CHAT GPT and GEMINI.
 
 ### Question 1
-Cultural Property: Basilica di San Lorenzo (Firenze)
-Author: Michelangelo Buonarroti
-Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
+<p>Cultural Property: Basilica di San Lorenzo (Firenze)</p>
+<p>Author: Michelangelo Buonarroti</p>
+<p>Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?</p>
     
 
 <table style="text-align: center;">
@@ -35,7 +35,13 @@ Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San 
   </thead>
   <tbody>
    <tr>
-        <td> Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include: The Medici Chapels (Cappelle Medicee): Michelangelo designed and partially executed the sculptures and architectural elements for the New Sacristy (Sagrestia Nuova), which houses the tombs of several members of the Medici family. Key works include: Tomb of Lorenzo de' Medici (Duke of Urbino): Featuring the statues "Dusk" and "Dawn" flanking the central figure of Lorenzo. Tomb of Giuliano de' Medici (Duke of Nemours): Featuring the statues "Night" and "Day" flanking the central figure of Giuliano. The Laurentian Library (Biblioteca Laurenziana): While not a traditional artwork, Michelangelo designed the architecture and decorative elements of this library attached to the basilica. It is renowned for its innovative stair design and interior space. These works reflect Michelangelo's mastery in sculpture and architecture and are key attractions in the Basilica di San Lorenzo, showcasing his deep connection with the Medici family and their patronage. 
+        <td> <p>Michelangelo Buonarroti contributed several significant artworks to the Basilica di San Lorenzo in Florence. These include:</p>
+<p>The Medici Chapels (Cappelle Medicee): Michelangelo designed and partially executed the sculptures and architectural elements for the New Sacristy (Sagrestia Nuova), which houses the tombs of several members of the Medici family.</p>
+<p>Key works include:</p>
+<p>Tomb of Lorenzo de' Medici (Duke of Urbino): Featuring the statues "Dusk" and "Dawn" flanking the central figure of Lorenzo.</p>
+<p>Tomb of Giuliano de' Medici (Duke of Nemours): Featuring the statues "Night" and "Day" flanking the central figure of Giuliano.</p>
+<p>The Laurentian Library (Biblioteca Laurenziana): While not a traditional artwork, Michelangelo designed the architecture and decorative elements of this library attached to the basilica. It is renowned for its innovative stair design and interior space.</p>
+<p>These works reflect Michelangelo's mastery in sculpture and architecture and are key attractions in the Basilica di San Lorenzo, showcasing his deep connection with the Medici family and their patronage.</p>
         </td>
    
     <td>
@@ -48,7 +54,7 @@ Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San 
 </tbody>
 </table>
 
-  ### Question 2
+### Question 2
 
  Can you extract exactly what the main topics are based on this description?
 
@@ -83,7 +89,7 @@ Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San 
 </tbody>
 </table>
 
-  ### Question 3
+### Question 3
    Could you transform this description into RDF format and use Arco ontology?
 
  <table style="text-align: center;">
