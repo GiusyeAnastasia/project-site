@@ -49,9 +49,13 @@ FILTER(REGEX(?label ,"Buonarroti Michelangelo","i"))
 ```
 [Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+cpv%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FCPV%2F%3E%0D%0A%0D%0AASK%0D%0AWHERE%0D%0A%7B%0D%0A%3Fsubject+a+cpv%3APerson%3B%0D%0A+++++++++++++++++rdfs%3Alabel+%3Flabel%0D%0A%0D%0AFILTER%28REGEX%28%3Flabel+%2C%22Buonarroti+Michelangelo%22%2C%22i%22%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on).
 
+Once determined the presence of this relevant data, we can procede with more detailed queries.
+
 # Step 2
 
 What are the cultural events associated with the artist "Michelangelo Buonarroti"?
+
+This query aims to retrieve cultural events associated with a specific artist, providing insights into the specific events ordered by event name and, if indicated, the year of each event.
 
 ```js
 PREFIX cis: <http://dati.beniculturali.it/cis/>
@@ -81,6 +85,8 @@ LIMIT 100
 
 What are the cultural events associated with the artist "Michelangelo Buonarroti" in Rome and Florence?
 
+This query collects detailed information about cultural events related to these locations, providing insights into specific events and their geographical context. This data is crucial for understanding the cultural interactions between the artist and the two cities.
+
 ```js
 PREFIX cis: <http://dati.beniculturali.it/cis/>
 PREFIX clv: <https://w3id.org/italia/onto/CLV/>
@@ -109,6 +115,8 @@ UNION
 
 
 # Step 4
+
+Given the high number of events, we formulated a query to identify the exact number of events for each city.
 
 How many events about the artist "Michelangelo Buonarroti were organized in Florence and how many in Rome? 
 
@@ -156,8 +164,7 @@ FILTER( REGEX(?authorlabel, "Buonarroti Michelangelo" , "i"))
 ```
 [Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+cis%3A+%3Chttp%3A%2F%2Fdati.beniculturali.it%2Fcis%2F%3E%0D%0APREFIX+clv%3A+%3Chttps%3A%2F%2Fw3id.org%2Fitalia%2Fonto%2FCLV%2F%3E%0D%0APREFIX+a-cd%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Fcontext-description%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0ASELECT+COUNT+%28%3Fculturalevent+%29+AS+%3Fn%0D%0AWHERE%0D%0A%7B%0D%0A%3Fculturalevent+a+cis%3ACulturalEvent+.%0D%0A%3Fculturalevent+cis%3AinvolvesCulturalEntity+%3FculturalEntity+.%0D%0A%3FculturalEntity+a-cd%3AhasAuthor+%3Fauthor+.%0D%0A%3Fauthor+rdfs%3Alabel+%3Fauthorlabel.%0D%0A%3Fplace+a+cis%3AGeographicalFeature%3B%0D%0A++++++++++++++++rdfs%3Alabel+%22Roma%22.%0D%0A%3Fculturalevent+clv%3AhasSpatialCoverage+%3Fplace.%0D%0A%0D%0AFILTER%28+REGEX%28%3Fauthorlabel%2C+%22Buonarroti+Michelangelo%22+%2C+%22i%22%29%29%0D%0A%7D%0D%0A&format=text%2Fhtml&timeout=0&signal_void=on)
 
-
-
+After identifying relevant cultural events, each group member chose a specific event for in-depth study. These events will be thoroughly explored, and individual reports will be prepared by each member.
 
 [Check the individual work of Giusy Cadili](./Giusy.html) 
 
