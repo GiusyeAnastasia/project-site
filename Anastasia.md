@@ -1,6 +1,6 @@
 ---
-[Exposition de l'artitalien de Cimabue à Tiepolo]
-[Cultutal Event]
+Title: [Exposition de l'artitalien de Cimabue à Tiepolo]
+Description: [Cultutal Event]
 ---
 **Research in SPARQL**
 
