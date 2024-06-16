@@ -7,17 +7,41 @@ description: [Cultutal Event]
 
 <span style="font-family: 'Century Gothic'; font-size: 20px; color: black;">CulturalEvent</span>
 
+
+Sure, here is the translation:
+
+---
+
+An Exhibition on the Unresolved Issues of Buonarroti's Work.
+
+The exhibition focuses on four key moments:
+
+1. The identification of an intervention, probably by Giuliano da Sangallo, in relation to Michelangelo's work in the architectural realization of the New Sacristy and the interpretation of its interior space as a unique synthesis of architecture and sculpture;
+
+2. The complex, endless story of the staircase for the vestibule of the Laurentian Library, including the description of a lesser-known intervention by Tribolo;
+
+3. The interpretation of Michelangelo's extraordinary drawings for the mysterious and never-realized triangular-plan "secret library";
+
+4. Finally, the creation of the Tribune of the Relics and the identification of the boundary between Michelangelo's intervention and the decorative elements of the pre-existing 15th-century counter-facade of the basilica.
+
+Centered around Michelangelo's drawings from the Casa Buonarroti, the exhibition also features works from prestigious Italian and international institutions. It utilizes computer support through three-dimensional models and digital elaborations to clarify the issues related to each theme and to highlight the extent of Michelangelo's intervention in one of the world's most famous and visited art spaces.
+
 # DESCRIZIONE CON SPARQL
-Spiegazione
+I wanted to begin by retrieving all the information about my event and decided to use the SPARQL DESCRIVE query:
+
+**Purpose of the Query**
+
+The SPARQL DESCRIBE query aims to retrieve a detailed description of a specific resource within a dataset. In this case, the resource is a cultural event identified by the URI "ce:15bc9a7db40a4e86fd2d95b53c533124"
 
 ```js
 PREFIX ce: <https://w3id.org/arco/resource/CulturalEvent/>
-DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124 (b9120f9e4fde2d9803c13dd4f8732093)
-}
+DESCRIBE ce:15bc9a7db40a4e86fd2d95b53c533124
 ```
 
-[Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+ce%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalEvent%2F%3E%0D%0ADESCRIBE+ce%3A15bc9a7db40a4e86fd2d95b53c533124&format=text%2Fhtml&timeout=0&signal_void=on)
+**What the Query Seeks to Discover**
+The query seeks to discover all the information available about the cultural event with the given identifier. The result of the query is an HTML5 document with embedded RDF statements represented using HTML+Microdata notation.
 
+[Result](https://dati.cultura.gov.it/sparql?default-graph-uri=&query=PREFIX+ce%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fresource%2FCulturalEvent%2F%3E%0D%0ADESCRIBE+ce%3A15bc9a7db40a4e86fd2d95b53c533124&format=text%2Fhtml&timeout=0&signal_void=on)
 
 # Large Language Models
 ## Comparing CHAT GPT and GEMINI
