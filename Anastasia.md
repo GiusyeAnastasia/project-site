@@ -81,11 +81,14 @@ After gathering all the information, the next steps involve enriching the data a
     <p> •	Scope of the Exhibition: By showcasing works from Cimabue to Tiepolo, the exhibition aimed to highlight the evolution of Italian art from the late medieval period through the Renaissance and Baroque eras. Michelangelo Buonarotti (1475-1564) falls right in the middle of this timeline, during the High Renaissance. </p>
     <p> •	Therefore, the exhibition wasn't solely about Michelangelo, but rather used his work as part of a broader narrative about the development of Italian artistic styles and techniques over several centuries.<p>
 <p>•	While Michelangelo wouldn't have been the sole focus, his inclusion in the exhibition would have been significant because he is considered one of the greatest artists of the Italian Renaissance, known for his mastery of painting, sculpture, and architecture.</p>
+    
     </td> 
   </tr>
 </tbody>
 </table>
   
+
+
 
 Next, I check if the artworks found by the AI are in ArCo.
 
