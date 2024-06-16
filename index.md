@@ -8,6 +8,8 @@ This WebSite is made by...
 
 [Anastasia Serdiuk](./Anastasia.html)
 
+![Michelangelo Buonarroti](https://hips.hearstapps.com/hmg-prod/images/portrait-of-michelangelo-buonarroti-early-17th-cen-found-in-news-photo-1664961873.jpg?crop=1xw:0.79688xh;center,top&resize=640:*)
+
 # Step 1
 
 First we make sure that the artist "Michelangelo Buonarroti" is present in the ArCo database.
