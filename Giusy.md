@@ -112,7 +112,7 @@ ex:Laurentian_Library rdf:type arco:CulturalProperty ;
 # Michelangelo Buonarroti
 ex:Michelangelo_Buonarroti rdf:type foaf:Person ;
     foaf:name "Michelangelo Buonarroti" .</td>
- <td><rdf:RDF
+ <td>"<rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:arco="http://purl.org/arco/core#"
   xmlns:schema="http://schema.org/">
@@ -149,7 +149,7 @@ ex:Michelangelo_Buonarroti rdf:type foaf:Person ;
     <arco:location arco:isPartOf="http://example.org/basilica-san-lorenzo" />
     <arco:hasVerificationStatus arco:VerificationStatus="Unverified" />
   </arco:ConceptualObject>
-</rdf:RDF></td>
+</rdf:RDF>"</td>
 </tr>
 </table>
 
