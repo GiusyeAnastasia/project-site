@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Exposition de l'art italien de Cimabue à Tiepolo]
+title: [Esposizione d'arte italiana da Cimabue a Tiepolo]
 description: [Cultutal Event]
 ---
 
@@ -329,7 +329,7 @@ From Michelangelo to Tiepolo:</p>
   </td>
 </tr>
 </tbody>
-</table>
+</table>.
 
 ---
   
