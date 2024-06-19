@@ -279,40 +279,6 @@ From Michelangelo to Tiepolo:</p>
     <p> Absolutely! Here's the transformed description into RDF format using the ArCo ontology:</p>
 <p>XML</p>
 
-<p><rdf:RDF xmlns:arco="http://www.cidoc-crm.org/cidoc-crm/"></p>
-        <p> xmlns:xsd="http://www.w3.org/2001/XMLSchema#"</p>
-       <p>  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></p>
-
-<p>  <arco:E22_Exhibition rdf:about="http://example.org/exposition_art_italien"></p>
-  <p>  <arco:P1_is_identified_by></p>
-   <p>   <rdf:Literal xml:lang="en"> Exposition de l'art italien de Cimabue à Tiepolo </rdf:Literal> </p>
- <p>   </arco:P1_is_identified_by></p>
- <p>   <arco:P14_consists_of> </p>
-  <p>    <arco:E72_Exhibition_Place rdf:about="http://example.org/petit_palais"> </p>
-  <p>      <arco:P1_is_identified_by> </p>
-  <p>        <rdf:Literal xml:lang="en">Petit Palais</rdf:Literal> </p>
-  <p>      </arco:P1_is_identified_by></p>
-  <p>    </arco:E72_Exhibition_Place></p>
-  <p>    </arco:P14_consists_of></p>
-  <p>  <arco:P16_was_in_existence></p>
-  <p>    <arco:E52_Time-Period></p>
-  <p>      <arco:P82_has_duration></p>
-  <p>        <xsd:duration>P1Y</xsd:duration> </arco:P82_has_duration></p>
-  <p>      </arco:E52_Time-Period></p>
-  <p>  </arco:P16_was_in_existence></p>
-  <p>  </arco:E22_Exhibition></p>
-
- <p> <arco:E21_Person rdf:about="http://example.org/michelangelo"></p>
-  <p>  <arco:P1_is_identified_by></p>
-  <p>    <rdf:Literal xml:lang="en">Michelangelo Buonarotti</rdf:Literal></p>
-  <p>  </arco:P1_is_identified_by></p>
-  <p>  <arco:P7_participates_in></p>
-  <p>    <arco:E22_Exhibition rdf:about="http://example.org/exposition_art_italien"></p>
-   <p>     </arco:E22_Exhibition></p>
- <p>   </arco:P7_participates_in></p>
- <p>   </arco:E21_Person></p>
-
-<p>  </rdf:RDF></p>
 
 <p>Explanation:</p>
 <p>•	We define the exhibition as an arco:E22_Exhibition with a URI (http://example.org/exposition_art_italien) and a human-readable <p>title.</p>
