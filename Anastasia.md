@@ -279,7 +279,7 @@ From Michelangelo to Tiepolo:</p>
     <p> Absolutely! Here's the transformed description into RDF format using the ArCo ontology:</p>
 <p>XML</p>
 <p><?xml version="1.0"?></p>
-<p><rdf:RDF xmlns:arco="http://www.cidoc-crm.org/cidoc-crm/"</p>
+<p><rdf:RDF xmlns:arco="http://www.cidoc-crm.org/cidoc-crm/"></p>
         <p> xmlns:xsd="http://www.w3.org/2001/XMLSchema#"</p>
        <p>  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></p>
 
@@ -287,10 +287,10 @@ From Michelangelo to Tiepolo:</p>
   <p>  <arco:P1_is_identified_by></p>
    <p>   <rdf:Literal xml:lang="en">Exposition de l'art italien de Cimabue à Tiepolo</rdf:Literal></p>
  <p>   </arco:P1_is_identified_by></p>
- <p>   <arco:P14_consists_of></p>
-  <p>    <arco:E72_Exhibition_Place rdf:about="http://example.org/petit_palais"></p>
-  <p>      <arco:P1_is_identified_by></p>
-  <p>        <rdf:Literal xml:lang="en">Petit Palais</rdf:Literal></p>
+ <p>   <arco:P14_consists_of> </p>
+  <p>    <arco:E72_Exhibition_Place rdf:about="http://example.org/petit_palais"> </p>
+  <p>      <arco:P1_is_identified_by> </p>
+  <p>        <rdf:Literal xml:lang="en">Petit Palais</rdf:Literal> </p>
   <p>      </arco:P1_is_identified_by></p>
   <p>    </arco:E72_Exhibition_Place></p>
   <p>    </arco:P14_consists_of></p>
@@ -304,7 +304,7 @@ From Michelangelo to Tiepolo:</p>
 
  <p> <arco:E21_Person rdf:about="http://example.org/michelangelo"></p>
   <p>  <arco:P1_is_identified_by></p>
-  <p>    <rdf:Literal xml:lang="en">Michelangelo Buonarotti</rdf:Literal> </p>
+  <p>    <rdf:Literal xml:lang="en">Michelangelo Buonarotti</rdf:Literal></p>
   <p>  </arco:P1_is_identified_by></p>
   <p>  <arco:P7_participates_in></p>
   <p>    <arco:E22_Exhibition rdf:about="http://example.org/exposition_art_italien"></p>
@@ -313,8 +313,7 @@ From Michelangelo to Tiepolo:</p>
  <p>   </arco:E21_Person></p>
 
 <p>  </rdf:RDF></p>
-<p>Usa il codice con cautela.</p>
-<p>content_copy</p>
+
 <p>Explanation:</p>
 <p>•	We define the exhibition as an arco:E22_Exhibition with a URI (http://example.org/exposition_art_italien) and a human-readable <p>title.</p>
 <p>•	The location (Petit Palais) is linked as an arco:E72_Exhibition_Place. Add more elements for additional locations.</p>
@@ -325,7 +324,7 @@ From Michelangelo to Tiepolo:</p>
 <p>•	Replace http://example.org with your actual URIs for the exhibition, location, and person.</p>
 <p>•	You can extend this example by adding information about specific artworks presented and their creators.</p>
 <p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p>
- <p>rdf:RDF</p>
+ 
   </td>
 </tr>
 </tbody>
