@@ -323,7 +323,7 @@ From Michelangelo to Tiepolo:</p>
 <p>Note:</p>
 <p>•	Replace http://example.org with your actual URIs for the exhibition, location, and person.</p>
 <p>•	You can extend this example by adding information about specific artworks presented and their creators.</p>
-<p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition. 
+<p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition. |
 
 
   
