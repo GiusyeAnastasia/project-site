@@ -278,8 +278,8 @@ From Michelangelo to Tiepolo:</p>
     <td>
     <p> Absolutely! Here's the transformed description into RDF format using the ArCo ontology:</p>
 <p>XML</p>
-<p><?xml version="1.0"?></p>
-<p><rdf:RDF xmlns:arco="http://www.cidoc-crm.org/cidoc-crm/"></p>
+<p><?xml version="1.0"?> </p>
+<p><rdf:RDF xmlns:arco="http://www.cidoc-crm.org/cidoc-crm/"> </p>
         <p> xmlns:xsd="http://www.w3.org/2001/XMLSchema#"</p>
        <p>  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></p>
 
