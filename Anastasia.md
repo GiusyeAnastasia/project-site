@@ -328,8 +328,11 @@ From Michelangelo to Tiepolo:</p>
 </p>
  
   </td>
+  
 </tr>
+
 </tbody>
+
 </table>       
 
 
