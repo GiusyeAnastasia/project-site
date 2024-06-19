@@ -181,17 +181,17 @@ From Michelangelo to Tiepolo:</p>
 <p>@prefix  foaf: <http://xmlns.com/foaf/0.1/> .</p>
 <p>@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .</p>
 
-<p><http://example.org/event/italian-art-exhibition> a arCo:Event ;</p>
-  <p>  dc:title "Exposition de l'art italien de Cimabue à Tiepolo" ;</p>
- <p>   arCo:hasTopic <http://example.org/topic/italian-art> ;</p>
- <p>   arCo:hasDuration [ a arCo:Duration ; arCo:hasUnit "century" ; arCo:hasValue "6" ] ;</p>
- <p>   arCo:hasFocus arCo:ArtProduction ;</p>
- <p>   arCo:hasTime [ a arCo:Time ; arCo:hasUnit "century" ; arCo:hasValue "13" ] ;</p>
- <p>   arCo:hasTime [ a arCo:Time ; arCo:hasUnit "century" ; arCo:hasValue "18" ] ;</p>
- <p>   arCo:hasCreator <http://example.org/artist/michelangelo> ;</p>
-  <p>  arCo:hasFocus <http://example.org/topic/renaissance> ;</p>
-  <p>  arCo:hasFocus <http://example.org/topic/baroque> ;</p>
-  <p>  arCo:hasFocus <http://example.org/topic/rococo> .</p>
+<p><http://example.org/event/italian-art-exhibition> a arCo:Event;</p>
+  <p>dc:title "Exposition de l'art italien de Cimabue à Tiepolo" ;</p>
+ <p>arCo:hasTopic <http://example.org/topic/italian-art>;</p>
+ <p>arCo:hasDuration [ a arCo:Duration ; arCo:hasUnit "century" ; arCo:hasValue "6" ];</p>
+ <p>arCo:hasFocus arCo:ArtProduction ;</p>
+ <p>arCo:hasTime [ a arCo:Time ; arCo:hasUnit "century" ; arCo:hasValue "13" ];</p>
+ <p>arCo:hasTime [ a arCo:Time ; arCo:hasUnit "century" ; arCo:hasValue "18" ];</p>
+ <p>arCo:hasCreator <http://example.org/artist/michelangelo>;</p>
+  <p>arCo:hasFocus <http://example.org/topic/renaissance>;</p>
+  <p>arCo:hasFocus <http://example.org/topic/baroque>;</p>
+  <p>arCo:hasFocus <http://example.org/topic/rococo>.</p>
 
 <p><http://example.org/topic/italian-art> a arCo:Topic ;</p>
    <p> dc:title "Italian Art" ;</p>
@@ -324,10 +324,8 @@ From Michelangelo to Tiepolo:</p>
 <p>•	Replace http://example.org with your actual URIs for the exhibition, location, and person.</p>
 <p>•	You can extend this example by adding information about specific artworks presented and their creators.</p>
 <p>This is a basic example using the ArCo ontology. It can be further customized to include more details depending on the available information about the exhibition.</p>
-
-    </td>
+</td>
 </tr>
-
 </tbody>
 </table>       
 
