@@ -329,9 +329,9 @@ From Michelangelo to Tiepolo:</p>
   </td>
 </tr>
 </tbody>
-</table>.
+</table>       .
 
----
+
   
 ## Creating new triples
 First, I check if the artworks found by the AI are present in ArCo.
