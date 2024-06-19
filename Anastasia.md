@@ -166,17 +166,17 @@ From Michelangelo to Tiepolo:</p>
 
 *Could you transform this description into RDF format using ArCo ontology?*
 
-
 <table style="text-align: center;">
-  <thead>
-    <tr>
-      <th>CHAT GPT</th>
-      <th>GEMINI</th>
-  </tr>
-  </thead>
-  <tbody>
-   <tr>
-        <td> <p>@prefix  arCo: <http://purl.org/NET/arCo/> .</p>
+<thead>
+ <tr>
+ <th>CHAT GPT</th>
+  <th>GEMINI</th>
+ </tr>
+</thead>
+<tbody>
+<tr>
+ <td> 
+   <p>@prefix  arCo: <http://purl.org/NET/arCo/> .</p>
 <p>@prefix  dc: <http://purl.org/dc/elements/1.1/> .</p>
 <p>@prefix  foaf: <http://xmlns.com/foaf/0.1/> .</p>
 <p>@prefix  xsd: <http://www.w3.org/2001/XMLSchema#> .</p>
