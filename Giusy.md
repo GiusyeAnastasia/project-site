@@ -93,11 +93,15 @@ Here I used *Zero-shot Prompting*. This technique involves asking the model to p
 *Can you extract exactly what the main topics are based on this description?*
 
 Here I used *Few-shot prompting*. In this approach, I provided a few examples of the task within the prompt to help the model understand the context and desired output.
-Gave him a prompt 
+Gave him a prompt. 
+
 Give me as a result just a list and nothing more.
 Example:
+
 1) "Mona Lisa" by Leonardo da Vinci
+
 2) "Starry Night" by Vincent van Gogh
+
 3) "The Last Supper" by Leonardo da Vinci 
 
 <table style="text-align: center;">
@@ -118,10 +122,22 @@ Example:
 
     </td>   
     <td>
-        <p> Based on the description, the main topics regarding Michelangelo's work at the Basilica di San Lorenzo are: </p>
-        <p> 1.	The New Sacristy (Sagrestia Nuova): This is the key area where Michelangelo's completed works are found. He designed the entire space and created the famous tombs. </p>
-        <p> 2.	Unfulfilled Designs: While Michelangelo had a vision for the facade, his designs were never implemented. You can learn more about them at a separate museum. </p>
-        <p> 3.	Unconfirmed Sketches: There's a possibility of hidden sketches by Michelangelo, but they are inaccessible and their existence remains unverified.</p>
+      <p> Based on the description, the main topics regarding Michelangelo's work at the Basilica di San Lorenzo are: </p>
+<p> 1.The New Sacristy (Sagrestia Nuova)This is where Michelangelo's most famous contributions reside. He designed the entire space and sculpted the magnificent tombs of Giuliano de' Medici and Lorenzo de' Medici.</p>
+<p> 2.The FacadeMichelangelo never finished the facade, but he did create several designs that can be seen at the Casa Buonarroti museum in Florence [Michelangelo's Model for the Facade of San Lorenzo].</p>
+<p> 3.Hidden SketchesThere are rumors of hidden sketches by Michelangelo in a chamber beneath the Basilica, but these are not accessible to the public.</p>
+<p> </p>
+
+*While the response contained extensive information I decided to use Prompt Chaining technique. I used the Prompt Chaining technique to build the complex query step-by-step. First, I asked to retrieve the main topics from the description, then I asked it to make a list out of those main and the result was following:*
+
+<p>Sure, here is a list of the main topics:</p>
+  
+<p> Main Topics </p>
+<p> The New Sacristy (Sagrestia Nuova) </p>
+<p> The Facade </p>
+<p> Hidden Sketches </p>
+
+
     </td> 
   </tr>
 </tbody>
