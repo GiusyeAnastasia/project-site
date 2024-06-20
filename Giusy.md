@@ -128,7 +128,7 @@ Example:
 <p> 3.Hidden SketchesThere are rumors of hidden sketches by Michelangelo in a chamber beneath the Basilica, but these are not accessible to the public.</p>
 <p> </p>
 
-*While the response contained extensive information I decided to use Prompt Chaining technique. I used the Prompt Chaining technique to build the complex query step-by-step. First, I asked to retrieve the main topics from the description, then I asked it to make a list out of those main and the result was following:*
+*While the response contained extensive information I decided to use Prompt Chaining technique. First, I asked to retrieve the main topics from the description, then I asked it to make a list out of those main and the result was following:*
 <p> </p>
 <p>Sure, here is a list of the main topics:</p>
   
