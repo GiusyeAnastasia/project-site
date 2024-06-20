@@ -58,6 +58,8 @@ After gathering all the information, the next steps involve enriching the data a
 
 *Q: which artworks of Michelangelo Buonarroti are located in the Basilica di San Lorenzo in Florence?*  
 
+Here I used *Zero-shot Prompting*. This technique involves asking the model to perform a task without providing any examples. It relies on the model's pre-trained knowledge.
+
 <table style="text-align: center;">
   <thead>
     <tr>
@@ -90,6 +92,14 @@ After gathering all the information, the next steps involve enriching the data a
 
 *Can you extract exactly what the main topics are based on this description?*
 
+Here I used *Few-shot prompting*. In this approach, I provided a few examples of the task within the prompt to help the model understand the context and desired output.
+Gave him a prompt 
+Give me as a result just a list and nothing more.
+Example:
+1) "Mona Lisa" by Leonardo da Vinci
+2) "Starry Night" by Vincent van Gogh
+3) "The Last Supper" by Leonardo da Vinci 
+
 <table style="text-align: center;">
   <thead>
     <tr>
@@ -101,15 +111,11 @@ After gathering all the information, the next steps involve enriching the data a
    <tr>
    
     <td>
-        <p> Based on the description provided, the main topics are: </p>
-        <p> The Medici Chapels (Cappelle Medicee)</p>
-        <p> Tomb of Lorenzo de' Medici (Duke of Urbino)</p>
-        <p> Statues: "Dusk" and "Dawn"</p>
-        <p> Tomb of Giuliano de' Medici (Duke of Nemours</p>
-        <p> Statues: "Night" and "Day"</p>
-        <p> The Laurentian Library (Biblioteca Laurenziana)</p>
-        <p> Architecture and decorative elements</p>
-        <p> Innovative stair design and interior space.</p>
+        <p> 1. The Medici Chapels (Cappelle Medicee) </p>
+        <p> 2. Tomb of Lorenzo de' Medici (Duke of Urbino) </p>
+        <p> 3. Tomb of Giuliano de' Medici (Duke of Nemours) </p>
+        <p> 4. The Laurentian Library (Biblioteca Laurenziana) </p>
+
     </td>   
     <td>
         <p> Based on the description, the main topics regarding Michelangelo's work at the Basilica di San Lorenzo are: </p>
