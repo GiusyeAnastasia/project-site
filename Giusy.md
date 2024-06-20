@@ -220,44 +220,44 @@ Example: "To understand SPARQL, follow these steps: 1) SPARQL is a query languag
          </td>
   
   <td>
-   <p> <rdf:RDF xmlns:arco="http://purl.oclc.org/arco/ rdf:about="http://example.org/basilica-san-lorenzo"> </p>
-  <p> <arco:has_work_of_art> </p>
-    <p> <arco:Work_of_Art rdf:about="http://example.org/sagrestia-nuova"> </p>
-     <p>  <arco:creator rdf:resource="http://example.org/michelangelo"/> </p>
-      <p> <arco:title>Sagrestia Nuova</arco:title> </p>
-     <p>  <arco:type_of_work>Space</arco:type_of_work> </arco:Work_of_Art> </p>
-  <p> </arco:has_work_of_art> </p>
-  <p> <arco:has_work_of_art> </p>
-    <p> <arco:Work_of_Art rdf:about="http://example.org/giuliano-de-medici-tomb"> </p>
-      <p> <arco:creator rdf:resource="http://example.org/michelangelo"/> </p>
-      <p> <arco:title>Tomb of Giuliano de' Medici</arco:title> </p>
-      <p> <arco:type_of_work>Tomb</arco:type_of_work> </p>
-    <p> </arco:Work_of_Art> </p>
- <p>  </arco:has_work_of_art> </p>
- <p>  <arco:has_work_of_art> </p>
-   <p>  <arco:Work_of_Art rdf:about="http://example.org/lorenzo-de-medici-tomb"> </p>
-      <p> <arco:creator rdf:resource="http://example.org/michelangelo"/> </p>
-      <p> <arco:title>Tomb of Lorenzo de' Medici</arco:title> </p>
-      <p> <arco:type_of_work>Tomb</arco:type_of_work> </p>
-   <p>  </arco:Work_of_Art> </p>
-  <p> </arco:has_work_of_art> </p>
-  <p> <arco:has_design> </p>
-    <p> <arco:Design rdf:about="http://example.org/facciata-san-lorenzo"> </p>
-     <p>  <arco:creator rdf:resource="http://example.org/michelangelo"/> </p>
-     <p>  <arco:title>Facade of San Lorenzo</arco:title> </p>
-     <p>  <arco:current_location rdf:resource="http://example.org/casa-buonarroti"/> </p>
-      <p> <arco:design_state>Incomplete</arco:design_state> </p>
-   <p>  </arco:Design> </p>
- <p>  </arco:has_design> </p>
-  <p> <arco:has_rumored_work_of_art> </p>
-   <p>  <arco:Work_of_Art rdf:about="http://example.org/michelangelo-hidden-sketches"> </p>
-     <p>  <arco:creator rdf:resource="http://example.org/michelangelo"/> </p>
-     <p>  <arco:title>Hidden Sketches</arco:title> </p>
-     <p>  <arco:type_of_work>Sketch</arco:type_of_work> </p>
-     <p>  <arco:accessibility>Not publicly accessible</arco:accessibility> </p>
-   <p>  </arco:Work_of_Art> </p>
- <p>  </arco:has_rumored_work_of_art> </p>
-<p> </rdf:RDF> </p>
+   <p> rdf:RDF xmlns:arco="http://purl.oclc.org/arco/ rdf:about="http://example.org/basilica-san-lorenzo" </p>
+  <p> arco:has_work_of_art </p>
+    <p> arco:Work_of_Art rdf:about="http://example.org/sagrestia-nuova" </p>
+     <p>  arco:creator rdf:resource="http://example.org/michelangelo"/ </p>
+      <p> arco:titleSagrestia Nuova /arco:title </p>
+     <p>  arco:type_of_work Space /arco:type_of_work /arco:Work_of_Art </p>
+  <p> arco:has_work_of_art </p>
+  <p> arco:has_work_of_art </p>
+    <p> arco:Work_of_Art rdf:about="http://example.org/giuliano-de-medici-tomb" </p>
+      <p> arco:creator rdf:resource="http://example.org/michelangelo"/ </p>
+      <p> arco:title Tomb of Giuliano de' Medici arco:title </p>
+      <p> arco:type_of_work Tomb /arco:type_of_work </p>
+    <p> arco:Work_of_Art </p>
+ <p>  arco:has_work_of_art </p>
+ <p>  arco:has_work_of_art </p>
+   <p>  arco:Work_of_Art rdf:about="http://example.org/lorenzo-de-medici-tomb" </p>
+      <p> arco:creator rdf:resource="http://example.org/michelangelo" </p>
+      <p> arco:title Tomb of Lorenzo de' Medici arco:title </p>
+      <p> arco:type_of_work Tomb arco:type_of_work </p>
+   <p>  arco:Work_of_Art </p>
+  <p> arco:has_work_of_art </p>
+  <p> arco:has_design </p>
+    <p> arco:Design rdf:about="http://example.org/facciata-san-lorenzo" </p>
+     <p>  arco:creator rdf:resource="http://example.org/michelangelo" </p>
+     <p>  arco:title Facade of San Lorenzo arco:title </p>
+     <p>  arco:current_location rdf:resource="http://example.org/casa-buonarroti" </p>
+      <p> arco:design_state Incomplete arco:design_state </p>
+   <p>  arco:Design </p>
+ <p>  arco:has_design </p>
+  <p> arco:has_rumored_work_of_art </p>
+   <p>  arco:Work_of_Art rdf:about="http://example.org/michelangelo-hidden-sketches" </p>
+     <p>  arco:creator rdf:resource="http://example.org/michelangelo" </p>
+     <p>  arco:title Hidden Sketches arco:title </p>
+     <p>  arco:type_of_work Sketch arco:type_of_work </p>
+     <p>  arco:accessibility Not publicly accessible arco:accessibility </p>
+   <p>  arco:Work_of_Art </p>
+ <p>  arco:has_rumored_work_of_art </p>
+<p> rdf:RDF </p>
 
   </td>
 </tr>
