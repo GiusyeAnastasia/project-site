@@ -147,6 +147,13 @@ Example:
    
    *Could you transform this description into RDF format and use Arco ontology?*
 
+For this part I decided to use another prompting technique, *Chain-of-Thought Prompting*, This technique involves breaking down the reasoning process into a sequence of steps, guiding the model to follow a logical path to arrive at the answer.
+
+Example: "To understand SPARQL, follow these steps: 1) SPARQL is a query language used to retrieve data stored in RDF format. 2) It allows users to write queries using patterns of triples. 3) By using keywords like OPTIONAL, FILTER, and UNION, SPARQL can perform complex searches. 4)Example - as an example I gave the LLMs some working SPARQL queries. 
+ 
+ The results are as follows: 
+
+
  <table style="text-align: center;">
   <thead>
     <tr>
@@ -157,59 +164,65 @@ Example:
   <tbody>
   <tr> 
     <td>
-      <p>@prefix arco: <https://w3id.org/arco/ontology/core/> .</p>
-      <p>@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .</p>
-      <p>@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .</p>
-      <p>@prefix foaf: <http://xmlns.com/foaf/0.1/> .</p>
-      <p>@prefix dcterms: <http://purl.org/dc/terms/> .</p>
-      <p>@prefix ex: <http://example.org/> .</p>
-      <p># Basilica di San Lorenzo</p>
-      <p>ex:Basilica_di_San_Lorenzo rdf:type arco:CulturalProperty ;</p>
-          <p>rdfs:label "Basilica di San Lorenzo" ;</p>
-          <p>dcterms:creator ex:Michelangelo_Buonarroti .</p>
-      <p># New Sacristy (Sagrestia Nuova)</p>
-          <p>ex:New_Sacristy rdf:type arco:CulturalPropertyPart ;</p>
-              <p>rdfs:label "New Sacristy" ;</p>
-              <p>dcterms:isPartOf ex:Basilica_di_San_Lorenzo .</p>
-      <p># Tomb of Lorenzo de' Medici</p>
-            <p>ex:Tomb_of_Lorenzo_de_Medici rdf:type arco:CulturalPropertyPart ;</p>
-            <p>rdfs:label "Tomb of Lorenzo de' Medici" ;</p>
-            <p>dcterms:isPartOf ex:New_Sacristy .</p>
-      <p># Statues Dawn (Aurora) and Dusk (Crepuscolo)</p>
-           <p>ex:Dawn rdf:type arco:CulturalProperty ;</p>
-           <p>rdfs:label "Dawn (Aurora)" ;</p>
-             <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-              <p>dcterms:isPartOf ex:Tomb_of_Lorenzo_de_Medici .</p>
-      <p>ex:Dusk rdf:type arco:CulturalProperty ;</p>
-            <p>rdfs:label "Dusk (Crepuscolo)" ;</p>
-            <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-            <p>dcterms:isPartOf ex:Tomb_of_Lorenzo_de_Medici .</p>
-      <p># Tomb of Giuliano de' Medici</p>
-            <p>ex:Tomb_of_Giuliano_de_Medici rdf:type arco:CulturalPropertyPart ;</p>
-            <p>rdfs:label "Tomb of Giuliano de' Medici" ;</p>
-               <p>dcterms:isPartOf ex:New_Sacristy .</p>
-      <p># Statues Night (Notte) and Day (Giorno)</p>
-             <p>ex:Night rdf:type arco:CulturalProperty ;</p>
-            <p>rdfs:label "Night (Notte)" ;</p>
-                 <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-                  <p>dcterms:isPartOf ex:Tomb_of_Giuliano_de_Medici .</p>
-      <p>ex:Day rdf:type arco:CulturalProperty ;</p>
-            <p>rdfs:label "Day (Giorno)" ;</p>
-            <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-            <p>dcterms:isPartOf ex:Tomb_of_Giuliano_de_Medici .</p>
-      <p># Medici Madonna</p>
-           <p>ex:Medici_Madonna rdf:type arco:CulturalProperty ;</p>
-             <p>rdfs:label "Medici Madonna" ;</p>
-             <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-            <p>dcterms:isPartOf ex:New_Sacristy .</p>
-      <p># Laurentian Library (Biblioteca Medicea Laurenziana)</p>
-           <p>ex:Laurentian_Library rdf:type arco:CulturalProperty ;</p>
-                 <p>rdfs:label "Laurentian Library" ;</p>
-                 <p>dcterms:creator ex:Michelangelo_Buonarroti ;</p>
-                 <p>dcterms:isPartOf ex:Basilica_di_San_Lorenzo .</p>
-      <p># Michelangelo Buonarroti</p>
-            <p>ex:Michelangelo_Buonarroti rdf:type foaf:Person ;</p>
-            <p>foaf:name "Michelangelo Buonarroti".</p>
+    <p> PREFIX arco: <https://w3id.org/arco/ontology/arco/> </p>
+<p> PREFIX a-l: <https://w3id.org/arco/ontology/location/> </p>
+<p> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> </p>
+<p> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> </p>
+
+<p> # Basilica di San Lorenzo </p>
+<p><http://example.org/Basilica_di_San_Lorenzo> rdf:type arco:ArchitecturalStructure ;</p>
+   <p> rdfs:label "Basilica di San Lorenzo" .</p>
+
+<p> # The Medici Chapels</p>
+<p> <http://example.org/Medici_Chapels> rdf:type arco:CulturalHeritage ;</p>
+   <p> rdfs:label "The Medici Chapels (Cappelle Medicee)" ;</p>
+    <p> arco:partOf <http://example.org/Basilica_di_San_Lorenzo> ;</p>
+    <p> arco:hasCreator <http://example.org/Michelangelo_Buonarroti> .</p>
+
+<p> # Tomb of Lorenzo de' Medici (Duke of Urbino)</p>
+<p> <http://example.org/Tomb_of_Lorenzo_de_Medici> rdf:type arco:CulturalHeritage ;</p>
+    <p> rdfs:label "Tomb of Lorenzo de' Medici (Duke of Urbino)" ;</p>
+   <p> arco:partOf <http://example.org/Medici_Chapels> ;</p>
+  <p>  arco:hasPart <http://example.org/Statue_Dusk> , <http://example.org/Statue_Dawn> ;</p>
+   <p> arco:hasCentralFigure <http://example.org/Lorenzo_de_Medici_Statue> .</p>
+
+<p> # Statues for Tomb of Lorenzo de' Medici</p>
+<p> <http://example.org/Statue_Dusk> rdf:type arco:Sculpture ;</p>
+  <p>  rdfs:label "Dusk" .</p>
+
+<p> <http://example.org/Statue_Dawn> rdf:type arco:Sculpture ;</p>
+    <p> rdfs:label "Dawn" .</p>
+
+<p> <http://example.org/Lorenzo_de_Medici_Statue> rdf:type arco:Sculpture ;</p>
+  <p> rdfs:label "Lorenzo de' Medici" .</p>
+
+<p> # Tomb of Giuliano de' Medici (Duke of Nemours) </p>
+<p> <http://example.org/Tomb_of_Giuliano_de_Medici> rdf:type arco:CulturalHeritage ;</p>
+   <p> rdfs:label "Tomb of Giuliano de' Medici (Duke of Nemours)" ;</p>
+   <p> arco:partOf <http://example.org/Medici_Chapels> ;</p>
+   <p> arco:hasPart <http://example.org/Statue_Night> , <http://example.org/Statue_Day> ;</p>
+  <p>  arco:hasCentralFigure <http://example.org/Giuliano_de_Medici_Statue> .</p>
+
+<p> # Statues for Tomb of Giuliano de' Medici</p>
+<p> <http://example.org/Statue_Night> rdf:type arco:Sculpture ;</p>
+  <p>  rdfs:label "Night" .</p>
+
+<p> <http://example.org/Statue_Day> rdf:type arco:Sculpture ;</p>
+   <p> rdfs:label "Day" .</p>
+
+<p> <http://example.org/Giuliano_de_Medici_Statue> rdf:type arco:Sculpture ;</p>
+   <p> rdfs:label "Giuliano de' Medici" .</p>
+
+<p> # The Laurentian Library</p>
+<p> <http://example.org/Laurentian_Library> rdf:type arco:ArchitecturalStructure ;</p>
+   <p> rdfs:label "The Laurentian Library (Biblioteca Laurenziana)" ;</p>
+   <p> arco:partOf <http://example.org/Basilica_di_San_Lorenzo> ;</p>
+   <p> arco:hasCreator <http://example.org/Michelangelo_Buonarroti> .</p>
+
+<p> # Michelangelo Buonarroti</p>
+<p> <http://example.org/Michelangelo_Buonarroti> rdf:type arco:Person ;</p>
+  <p> rdfs:label "Michelangelo Buonarroti" .</p>
+
          </td>
   
   <td>
