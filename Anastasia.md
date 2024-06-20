@@ -247,7 +247,7 @@ From Michelangelo to Tiepolo:</p>
  <p>   dc:title "Venus of Urbino" ;</p>
   <p>  arCo:hasCreator <http://example.org/artist/titian> ;</p>
   <p>  arCo:hasTime [ a arCo:Time ; arCo:hasUnit "year" ; arCo:hasValue "1538" ] ;</p>
-  <p>  arCo:hasType arCo:Painting .
+  <p>  arCo:hasType arCo:Painting .</p>
 
 <p><http://example.org/artwork/calling-of-saint-matthew> a arCo:Artifact ;</p>
  <p>   dc:title "The Calling of Saint Matthew" ;</p>
