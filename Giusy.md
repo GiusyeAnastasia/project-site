@@ -164,64 +164,58 @@ Example: "To understand SPARQL, follow these steps: 1) SPARQL is a query languag
   <tbody>
   <tr> 
     <td>
-    <p> PREFIX arco: <https://w3id.org/arco/ontology/arco/> </p>
-<p> PREFIX a-l: <https://w3id.org/arco/ontology/location/> </p>
-<p> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> </p>
-<p> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> </p>
+   <p> SELECT DISTINCT ?culturalHeritage ?heritageLabel ?location ?locationLabel ?creator ?creatorLabel</p>
+<p> WHERE</p>
+<p> {</p>
+  <p>  # Basilica di San Lorenzo</p>
+   <p>  ?basilica rdf:type a-l:ArchitecturalStructure ;</p>
+            <p>   rdfs:label "Basilica di San Lorenzo" .</p>
 
-<p> # Basilica di San Lorenzo </p>
-<p><http://example.org/Basilica_di_San_Lorenzo> rdf:type arco:ArchitecturalStructure ;</p>
-   <p> rdfs:label "Basilica di San Lorenzo" .</p>
+  <p>   # The Medici Chapels</p>
+   <p>  ?mediciChapels rdf:type a-cd:CulturalHeritage ;</p>
+                  <p>  rdfs:label "The Medici Chapels (Cappelle Medicee)" ;</p>
+                  <p>  a-cd:isPartOf ?basilica ;</p>
+                  <p>  a-cd:hasAuthor ?creator .</p>
 
-<p> # The Medici Chapels</p>
-<p> <http://example.org/Medici_Chapels> rdf:type arco:CulturalHeritage ;</p>
-   <p> rdfs:label "The Medici Chapels (Cappelle Medicee)" ;</p>
-    <p> arco:partOf <http://example.org/Basilica_di_San_Lorenzo> ;</p>
-    <p> arco:hasCreator <http://example.org/Michelangelo_Buonarroti> .</p>
+   <p> # Tomb of Lorenzo de' Medici (Duke of Urbino)</p>
+   <p>  ?tombLorenzo rdf:type a-cd:CulturalHeritage ;</p>
+                 <p> rdfs:label "Tomb of Lorenzo de' Medici (Duke of Urbino)" ;</p>
+                <p>  a-cd:isPartOf ?mediciChapels .</p>
 
-<p> # Tomb of Lorenzo de' Medici (Duke of Urbino)</p>
-<p> <http://example.org/Tomb_of_Lorenzo_de_Medici> rdf:type arco:CulturalHeritage ;</p>
-    <p> rdfs:label "Tomb of Lorenzo de' Medici (Duke of Urbino)" ;</p>
-   <p> arco:partOf <http://example.org/Medici_Chapels> ;</p>
-  <p>  arco:hasPart <http://example.org/Statue_Dusk> , <http://example.org/Statue_Dawn> ;</p>
-   <p> arco:hasCentralFigure <http://example.org/Lorenzo_de_Medici_Statue> .</p>
+   <p>  # Statues for Tomb of Lorenzo de' Medici</p>
+    <p> ?statueDusk rdf:type a-cd:CulturalHeritage ;</p>
+               <p>  rdfs:label "Dusk" ;</p>
+              <p>   a-cd:isPartOf ?tombLorenzo .</p>
+   <p>  ?statueDawn rdf:type a-cd:CulturalHeritage ;</p>
+               <p>  rdfs:label "Dawn" ;</p>
+               <p>  a-cd:isPartOf ?tombLorenzo .</p>
 
-<p> # Statues for Tomb of Lorenzo de' Medici</p>
-<p> <http://example.org/Statue_Dusk> rdf:type arco:Sculpture ;</p>
-  <p>  rdfs:label "Dusk" .</p>
+   <p>  # Tomb of Giuliano de' Medici (Duke of Nemours)</p>
+   <p>  ?tombGiuliano rdf:type a-cd:CulturalHeritage ;</p>
+               <p> rdfs:label "Tomb of Giuliano de' Medici (Duke of Nemours)" ;</p>
+                <p> a-cd:isPartOf ?mediciChapels .</p>
 
-<p> <http://example.org/Statue_Dawn> rdf:type arco:Sculpture ;</p>
-    <p> rdfs:label "Dawn" .</p>
+   <p>  # Statues for Tomb of Giuliano de' Medici</p>
+   <p>  ?statueNight rdf:type a-cd:CulturalHeritage ;</p>
+                <p>  rdfs:label "Night" ;</p>
+                <p>  a-cd:isPartOf ?tombGiuliano .</p>
+   <p>  ?statueDay rdf:type a-cd:CulturalHeritage ;</p>
+              <p>  rdfs:label "Day" ;</p>
+              <p>  a-cd:isPartOf ?tombGiuliano .</p>
 
-<p> <http://example.org/Lorenzo_de_Medici_Statue> rdf:type arco:Sculpture ;</p>
-  <p> rdfs:label "Lorenzo de' Medici" .</p>
+    <p> # The Laurentian Library</p>
+    <p> ?library rdf:type a-l:ArchitecturalStructure ;</p>
+            <p>  rdfs:label "The Laurentian Library (Biblioteca Laurenziana)" ;</p>
+            <p>  a-cd:isPartOf ?basilica ;</p>
+            <p>  a-cd:hasAuthor ?creator .</p>
 
-<p> # Tomb of Giuliano de' Medici (Duke of Nemours) </p>
-<p> <http://example.org/Tomb_of_Giuliano_de_Medici> rdf:type arco:CulturalHeritage ;</p>
-   <p> rdfs:label "Tomb of Giuliano de' Medici (Duke of Nemours)" ;</p>
-   <p> arco:partOf <http://example.org/Medici_Chapels> ;</p>
-   <p> arco:hasPart <http://example.org/Statue_Night> , <http://example.org/Statue_Day> ;</p>
-  <p>  arco:hasCentralFigure <http://example.org/Giuliano_de_Medici_Statue> .</p>
+   <p> # Michelangelo Buonarroti</p>
+    <p> ?creator rdf:type a-cd:Person ;</p>
+             <p> rdfs:label ?creatorLabel .</p>
 
-<p> # Statues for Tomb of Giuliano de' Medici</p>
-<p> <http://example.org/Statue_Night> rdf:type arco:Sculpture ;</p>
-  <p>  rdfs:label "Night" .</p>
+    <p> FILTER(REGEX(?creatorLabel, "Buonarroti Michelangelo" , "i")) </p>
+<p> } </p>
 
-<p> <http://example.org/Statue_Day> rdf:type arco:Sculpture ;</p>
-   <p> rdfs:label "Day" .</p>
-
-<p> <http://example.org/Giuliano_de_Medici_Statue> rdf:type arco:Sculpture ;</p>
-   <p> rdfs:label "Giuliano de' Medici" .</p>
-
-<p> # The Laurentian Library</p>
-<p> <http://example.org/Laurentian_Library> rdf:type arco:ArchitecturalStructure ;</p>
-   <p> rdfs:label "The Laurentian Library (Biblioteca Laurenziana)" ;</p>
-   <p> arco:partOf <http://example.org/Basilica_di_San_Lorenzo> ;</p>
-   <p> arco:hasCreator <http://example.org/Michelangelo_Buonarroti> .</p>
-
-<p> # Michelangelo Buonarroti</p>
-<p> <http://example.org/Michelangelo_Buonarroti> rdf:type arco:Person ;</p>
-  <p> rdfs:label "Michelangelo Buonarroti" .</p>
 
          </td>
   
