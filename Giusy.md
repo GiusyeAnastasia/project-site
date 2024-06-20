@@ -129,7 +129,7 @@ Example:
 <p> </p>
 
 *While the response contained extensive information I decided to use Prompt Chaining technique. I used the Prompt Chaining technique to build the complex query step-by-step. First, I asked to retrieve the main topics from the description, then I asked it to make a list out of those main and the result was following:*
-
+<p> </p>
 <p>Sure, here is a list of the main topics:</p>
   
 <p> Main Topics </p>
