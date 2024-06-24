@@ -68,11 +68,13 @@ DESCRIBE ce:49e9140e7d94d2049c1eeb6582c51e01
 
 After the research in SPARQL, I used Large Language Models (LLMs) in order to get further information on the event. CHAT GPT and GEMINI seem to be the most reliable LLMs. Below are the questions I asked and the answers from the two LLMs.​
 
-### Question 1
+### Question 1 (zero-shot prompting)
 
-*Cultural event: Exposition de l'art italien de Cimabue à Tiepolo *
-*Artist: Michelangelo Buonarotti *
-*Q: What does this cultural event represent?*
+**Cultural event:** Exposition de l'art italien de Cimabue à Tiepolo 
+
+**Artist:** Michelangelo Buonarotti 
+
+**Question:** What does this cultural event represent?
 
 
 <table style="text-align: center;">
@@ -109,9 +111,9 @@ After the research in SPARQL, I used Large Language Models (LLMs) in order to ge
 
 </table>
   
-### Question 2
+### Question 2 (self-consistency)
 
-*What are the most significant artworks presented?*
+**Which artworks are present in the cultural event "Esposizione d’arte italiana da Cimabue a Tiepolo"?**
 
 
 <table style="text-align: center;">
@@ -123,24 +125,110 @@ After the research in SPARQL, I used Large Language Models (LLMs) in order to ge
   </thead>
   <tbody>
    <tr>
-        <td> <p>You’re right to ask! It’s impossible to say definitively which artworks would be the most significant without knowing the specific pieces included in the exhibition “Exposition de l’art italien de Cimabue à Tiepolo.”</p>
-<p>However, we can make some educated guesses based on the artists mentioned and the general timeline:</p>
-<p>From Cimabue to Michelangelo:</p>
-<p>•	Cimabue’s “Madonna Enthroned” (c. 1280): This iconic painting is considered a pivotal work in the development of Italian painting and is a key example of the transition from Byzantine art to the Italian Gothic style.</p>
-<p>•	Giotto’s “Ognissanti Madonna” (c. 1300-1310): Another masterpiece of early Italian painting, Giotto’s work is known for its revolutionary naturalism and three-dimensionality.</p>
-<p>•	Masaccio’s “The Tribute Money” (c. 1425-1427): A pivotal work of the Early Renaissance, this fresco demonstrates Masaccio’s mastery of perspective and realism.</p>
-<p>•	Michelangelo’s “David” (1501-1504): A monumental sculpture that embodies the ideals of the High Renaissance, “David” is one of the most recognizable artworks in the world.</p>
+        <td> <p>You’re asking about the artworks in the “Esposizione d’arte italiana da Cimabue a Tiepolo” exhibition. Unfortunately, you’re missing some crucial information to answer your question:</p>
+<p>•	Which specific exhibition are you referring to? There have been numerous exhibitions with this title or variations of it. Knowing the exact event is vital to identify the artworks.</p>
+<p>•	When and where was the exhibition held? The specific time and place of the exhibition are essential for finding its catalogue and details of the artworks.</p>
+<p>To help you find the information you need, please provide:</p>
+<p>•	The full and exact title of the exhibition.
+•	The year and city where the exhibition took place.</p>
+<p>Once you provide this information, I can help you find a list of the artworks displayed.</p>
+        </td>
+<td>
+ <p>The specific artworks in the "Esposizione d’arte italiana da Cimabue a Tiepolo" are unfortunately unknown since it wasn't a permanent exhibition. However, based on the title, we can glean some information:</p>
+ <p>•	The timeframe: "Cimabue" refers to a late 13th/early 14th-century artist and "Tiepolo" to an 18th-century artist. So, the exhibition likely focused on Italian art from the late medieval period to the 18th century.</p>
+ <p>•	The focus: The title mentions "arte italiana" (Italian art), so it would have showcased paintings, sculptures, and possibly other art forms by prominent Italian artists from that period.</p>
+ <p>Here's what we can expect:</p>
+ <p>•	It likely featured iconic works by Giotto, a pivotal figure transitioning from medieval to Renaissance styles.</p>
+ <p>•	Renaissance masters like Leonardo da Vinci, Raphael, and Donatello would have been well-represented.</p>
+ <p>•	The exhibition might have included paintings from the Venetian school by Titian, Tintoretto, and of course, Tiepolo himself.</p>
+ <p>If you'd like to explore further, you can try searching for the exhibition catalog (usually a booklet with details on the artworks displayed) if one exists. Look for phrases like "Exposition de l'art italien de Cimabue à Tiepolo catalogue" or "Esposizione d’arte italiana da Cimabue a Tiepolo catalogo".</p>
+</td>
+ </tr>
+  
+</tbody>
+
+</table>
+
+**Tell me about the artworks exhibited in "Esposizione d’arte italiana da Cimabue a Tiepolo”**
+
+<table style="text-align: left;">
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr> 
+ <td>  
+  <p>You’re talking about a very famous exhibition, one of the most important art events of the early 20th century!</p>
+  <p>The “Esposizione d’arte italiana da Cimabue a Tiepolo”, held in Rome in 1911, was a massive exhibition that showcased Italian art from the 13th to the 18th centuries. It was a landmark event, not just for its scope, but also for the way it influenced art history.</p>
+  <p>While it’s impossible to list every single artwork in the exhibition, here are some highlights and key features:</p>
+  <p>Key Points:</p>
+  <p>•	Scope: The exhibition covered over 500 years of Italian art, from the proto-Renaissance of Cimabue to the late Baroque of Tiepolo.</p>
+  <p>•	Importance: It was a crucial event in the development of art history as a discipline. The exhibition helped establish the chronological and stylistic understanding of Italian art that we still use today.</p>
+  <p>•	Influence: The exhibition was also instrumental in the growing appreciation for early Italian art, leading to the establishment of museums and collections dedicated to these periods.</p>
+<p>Some Notable Artworks:</p>
+<p>•	Cimabue: “Madonna Enthroned” (c. 1280)
+•	Giotto: “Ognissanti Madonna” (c. 1300)
+•	Duccio: “Maestà” (c. 1308-1311)
+•	Masaccio: “The Tribute Money” (c. 1425)
+•	Leonardo da Vinci: “Virgin of the Rocks” (c. 1483-1486)
+•	Raphael: “The School of Athens” (c. 1509-1511)
+•	Michelangelo: “The Last Judgement” (c. 1536-1541)
+•	Titian: “Venus of Urbino” (c. 1538)
+•	Caravaggio: “The Calling of Saint Matthew” (c. 1600)
+•	Bernini: “David” (c. 1623-1624)
+•	Tiepolo: “The Triumph of Galatea” (c. 1745-1750)
+</p>
+<p>Where to Find More Information:</p>
+<p>•	Museums: Many of the artworks featured in the 1911 exhibition are now in museums around the world. You can search the collections of these museums online to find images and information about specific works.</p>
+<p>•	Art History Books: There are many books written about the history of Italian art, and some of these will mention the “Esposizione d’arte italiana da Cimabue a Tiepolo” exhibition.</p>
+<p>•	Academic Databases: Searching academic databases like JSTOR can help you find scholarly articles and theses that discuss the 1911 exhibition and its influence.</p>
+<p>I hope this information helps! Let me know if you have any other questions.</p> </td>
+<td>
+ <p>While I can't give you a definitive list of artworks exhibited in "Esposizione d’arte italiana da Cimabue a Tiepolo" because it wasn't a permanent exhibition, here's what we can infer based on the title and historical context:</p>
+ <p>Time Period: The title mentions Cimabue (late 13th/early 14th century) and Tiepolo (18th century). So, the exhibition likely showcased Italian art from the late medieval period to the 18th century.</p>
+ <p>Focus on Italian Masters: Looking at "arte italiana" (Italian art), the exhibition would have featured paintings, sculptures, and possibly other art forms by prominent Italian artists from that period.</p>
+<p>Possible Artworks:</p>
+ <p>•	Early Renaissance: Giotto, a pivotal figure bridging the medieval and Renaissance styles, could have been well-represented with frescoes or paintings.</p>
+ <p>•	High Renaissance: Masters like Leonardo da Vinci (Mona Lisa?), Raphael (Sistine Madonna?), and Donatello (David?) would have been strong contenders for inclusion.</p>
+ <p>•	Venetian School: Paintings by Titian, Tintoretto, and Tiepolo himself might have been showcased.</p>
+ <p>Finding More Information:</p>
+ <p>To delve deeper, try searching for the exhibition catalog, a booklet with details on displayed artworks. Look for phrases like "Exposition de l'art italien de Cimabue à Tiepolo catalogue" or "Esposizione d’arte italiana da Cimabue a Tiepolo catalogo".</p>
+ <p>Remember, this was a specific exhibition, and the actual artworks displayed might differ from what we've discussed.</p>
+</td>
+
+  
+**What are the most significant artworks presented?**
+    
+<table style="text-align: left;">
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+  </tr>
+  </thead>
+  <tbody>
+   <tr> 
+ <td>  
+  <p>You’re right to ask! It’s impossible to say definitively which artworks would be the most significant without knowing the specific pieces included in the exhibition “Exposition de l’art italien de Cimabue à Tiepolo.”</p>
+  <p>However, we can make some educated guesses based on the artists mentioned and the general timeline:</p>
+  <p>From Cimabue to Michelangelo:</p>
+  <p>Cimabue’s “Madonna Enthroned” (c. 1280): This iconic painting is considered a pivotal work in the development of Italian painting and is a key example of the transition from Byzantine art to the Italian Gothic style.</p>
+  <p>• Giotto’s “Ognissanti Madonna” (c. 1300-1310): Another masterpiece of early Italian painting, Giotto’s work is known for its revolutionary naturalism and three-dimensionality.</p>
+  <p>Masaccio’s “The Tribute Money” (c. 1425-1427): A pivotal work of the Early Renaissance, this fresco demonstrates Masaccio’s mastery of perspective and realism.</p>
+  <p>•	Michelangelo’s “David” (1501-1504): A monumental sculpture that embodies the ideals of the High Renaissance, “David” is one of the most recognizable artworks in the world.</p>
 From Michelangelo to Tiepolo:</p>
 <p>•	Raphael’s “The School of Athens” (1509-1511): This fresco is a masterpiece of the High Renaissance, depicting a gathering of philosophers and scientists.</p>
 <p>•	Titian’s “Venus of Urbino” (1538): A sensual and evocative portrait, this painting showcases Titian’s mastery of color and composition.</p>
 <p>•	Caravaggio’s “The Calling of Saint Matthew” (1600): A groundbreaking work of Baroque painting, “The Calling of Saint Matthew” is known for its dramatic realism and use of chiaroscuro.</p>
 <p>•	Tiepolo’s “The Triumph of Chastity” (1750-1753): A masterpiece of Rococo painting, this fresco showcases Tiepolo’s decorative style and mastery of light and color.</p>
 <p>Note: This list is not exhaustive. Many other significant works by artists like Leonardo da Vinci, Donatello, Botticelli, and Tintoretto could be included, depending on the exhibition’s specific focus and scope.</p>
-<p>To find the most significant artworks, it’s best to look for the official catalogue or website of the exhibition. This will provide detailed information about the featured artists and works.</p>
-        </td>
- 
-    <td>
-    <p> Unfortunately, there isn't a publicly available list detailing every artwork in the "Exposition de l'art italien de Cimabue à Tiepolo." However, based on what we know about the exhibition and the artists it covered, we can assume some of the most significant artworks presented likely included:</p>
+<p>To find the most significant artworks, it’s best to look for the official catalogue or website of the exhibition. This will provide detailed information about the featured artists and works.</p>  </td>
+
+<td>
+   <p> Unfortunately, there isn't a publicly available list detailing every artwork in the "Exposition de l'art italien de Cimabue à Tiepolo." However, based on what we know about the exhibition and the artists it covered, we can assume some of the most significant artworks presented likely included:</p>
 <p>Michelangelo Buonarotti: We can't be certain which specific pieces of his were on display, but some of his most renowned works created before 1935 (the year of the exhibition) include:</p>
 <p>Sistine Chapel ceiling frescoes (1508-1512)</p>
 <p>Pietà (1498-1500) sculpture</p>
@@ -161,6 +249,8 @@ From Michelangelo to Tiepolo:</p>
 </tbody>
 
 </table>
+
+
   
 ### Question 3
 
