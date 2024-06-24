@@ -151,7 +151,7 @@ After the research in SPARQL, I used Large Language Models (LLMs) in order to ge
 
 **Tell me about the artworks exhibited in "Esposizione d’arte italiana da Cimabue a Tiepolo”**
 
-<table style="text-align: left;">
+<table style="text-align: center;">
   <thead>
     <tr>
       <th>CHAT GPT</th>
@@ -209,7 +209,7 @@ After the research in SPARQL, I used Large Language Models (LLMs) in order to ge
 **What are the most significant artworks presented?**
 
     
-<table style="text-align: left;">
+<table style="text-align: center;">
   <thead>
     <tr>
       <th>CHAT GPT</th>
@@ -298,7 +298,73 @@ From Michelangelo to Tiepolo:</p>
   </tbody>
 </table>
 
+### Question 4 (Chain-of-thought)
 
+**I want you to conduct a comprehensive research summary on Michelangelo Buonarroti, the renowned Italian artist. Please follow these steps:**
+**1.	Outline Michelangelo Buonarroti’s life and background:** Summarize his early life, education, personal experiences  and major life events that influenced his artistic journey.
+**2.	Analyze Michelangelo Buonarroti’s artistic style and techniques:** Describe the distinctive features of his artworks, the techniques he employed (e.g., color palettes, brushstrokes, subject matter).
+**3.	Explore Michelangelo Buonarroti’s artistic legacy:** Discuss his impact on art history, the evolution of his influence on contemporary art and culture, and his enduring popularity as a cultural icon.
+**4.	Conclude with a brief summary of Michelangelo Buonarroti’s significance:** Summarize his importance as a painter, sculptor, architect and poet of the High Renaissance
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CHAT GPT</th>
+      <th>GEMINI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>Michelangelo Buonarroti: A Titan of the Renaissance</p>
+        <p>1. Life and Background:
+Michelangelo Buonarroti (1475-1564) was born in Caprese, Italy, into a family of modest means. His talent for art emerged early, and he began his artistic training in Florence under the tutelage of Domenico Ghirlandaio. He later studied sculpture in the Medici gardens, where he was exposed to the art of ancient Rome. Michelangelo’s life was marked by periods of both artistic triumph and personal adversity. He was deeply involved in the political and religious struggles of his time, and his work often reflected these turbulent currents.
+</p>
+       <p>Key Life Events:</p>
+<p>Early Patronage: He was commissioned by Lorenzo de’ Medici, a pivotal event that propelled him into the Florentine artistic scene.</p>
+<p>The David: His iconic sculpture of David, completed in 1504, solidified his reputation as a master sculptor.</p>
+<p>Sistine Chapel: Michelangelo’s frescoes on the ceiling of the Sistine Chapel in Rome (1508-1512), depicting scenes from the Book of Genesis, stand as a testament to his unparalleled artistic vision.</p>
+<p>The Last Judgment: He returned to the Sistine Chapel in 1536 to paint the monumental “Last Judgement” fresco on the altar wall, a powerful and emotive portrayal of the divine judgment.</p>
+<p>Architecture: He designed the dome of St. Peter’s Basilica, one of his most significant architectural achievements.
+</p>
+       <p>2. Artistic Style and Techniques:</p>
+<p>Michelangelo’s art is characterized by its grandeur, realism, and emotional intensity. His figures are often depicted in dynamic poses, showcasing a profound understanding of anatomy and a deep appreciation for the human form. He meticulously sculpted his subjects, capturing their inner strength and vulnerability with remarkable precision.
+</p>
+       <p>Key Features:</p>
+<p>Nudes: He often depicted the human body in its raw and natural state, breaking away from the idealized forms of the early Renaissance.</p>
+<p>Dynamic Composition: His figures are typically in motion, creating a sense of drama and energy.</p>
+<p>Emotional Intensity: His works evoke a wide range of emotions, from awe and wonder to pain and despair.</p>
+<p>Chiaroscuro: He expertly used light and shadow to create depth and realism in his works.
+</p>
+       <p>3. Artistic Legacy:</p>
+<p>Michelangelo’s influence on art history is immeasurable. He set new standards for sculpture, painting, and architecture, inspiring generations of artists. His work, from the soaring figures of the Sistine Chapel to the powerful beauty of the Pietà, continues to captivate and inspire audiences around the world.
+</p>
+       <p>Impact on Contemporary Art and Culture:</p>
+<p>Michelangelo’s influence is visible in the art of the Baroque period and beyond. He is frequently cited as a major influence by artists across diverse genres, including painters, sculptors, and architects. His powerful images and iconic figures have become ingrained in our cultural consciousness, appearing in everything from literature and film to music and fashion.
+</p>
+       <p>4. Significance as a Renaissance Master:</p>
+<p>Michelangelo Buonarroti stands as one of the greatest artists of the High Renaissance. He was a master of multiple disciplines, excelling in sculpture, painting, architecture, and poetry. His work embodies the spirit of the Renaissance, a period characterized by a renewed interest in classical learning and artistic innovation.</p>
+<p>In conclusion, Michelangelo’s genius transcended the boundaries of artistic expression, leaving an indelible mark on art history and culture. His legacy continues to inspire and captivate, reminding us of the enduring power of human creativity.
+</p>
+      </td>
+      <td><p>Michelangelo Buonarroti: A Renaissance Titan</p>
+      <p>1. Life and Background</p>
+<p>Michelangelo Buonarroti (1475-1564) was born into a prominent Florentine family. Though apprenticed to a painter, his true passion resided in sculpting. Early exposure to classical art in Florence deeply influenced his artistic vision. He secured patronage from powerful families like the Medici, shaping his career trajectory. Personal experiences, including the political turmoil of his time, are often reflected in the intensity and religious themes found in his work.
+</p>
+       <p>2. Artistic Style and Techniques</p>
+<p> Michelangelo's artistic style is characterized by a mastery of human anatomy and a profound understanding of form. His figures are powerful and dynamic, often imbued with a sense of drama and emotional depth. He was a meticulous draftsman, his works showcasing a precise and detailed approach. As a sculptor, he favored marble, meticulously carving figures that seem to burst from the stone. His paintings, most famously the Sistine Chapel ceiling, utilize vibrant colors and dramatic lighting to create a sense of awe and grandeur. Biblical narratives and themes of mortality are recurring subjects in both his sculptures and paintings.
+</p>
+       <p>3. Artistic Legacy</p>
+       <p>Michelangelo's influence on art history is unparalleled. He is considered one of the defining figures of the High Renaissance, along with Leonardo da Vinci and Raphael. His mastery of multiple disciplines – sculpture, painting, and architecture – established him as a true artistic genius. His influence on subsequent generations of artists is undeniable, with his techniques and approach to anatomy being studied and emulated for centuries. Michelangelo's impact extends beyond the visual arts, his work inspiring writers and musicians alike. His enduring popularity stems from the timeless beauty, profound emotions, and technical virtuosity embodied in his creations.</p>
+       <p>4. Significance: A Master of Many Arts</p>
+       <p>Michelangelo's significance lies in his unparalleled contributions to the visual arts. He is considered one of the greatest sculptors of all time, with works like David and Pieta becoming enduring symbols of human form and emotion. As a painter, the Sistine Chapel ceiling remains a landmark achievement in Western art. His architectural designs for the St. Peter's Basilica in Rome solidified his reputation as a true Renaissance man, excelling in multiple artistic disciplines. Michelangelo's life and work continue to inspire artists, scholars, and the general public, solidifying his place as a cornerstone of Western cultural heritage.</p>
+      </td>
+   
+    </tr>
+    
+  </tbody>
+</table>
  
  
 ## Creating new triples
