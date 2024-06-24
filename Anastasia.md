@@ -198,9 +198,16 @@ After the research in SPARQL, I used Large Language Models (LLMs) in order to ge
  <p>To delve deeper, try searching for the exhibition catalog, a booklet with details on displayed artworks. Look for phrases like "Exposition de l'art italien de Cimabue à Tiepolo catalogue" or "Esposizione d’arte italiana da Cimabue a Tiepolo catalogo".</p>
  <p>Remember, this was a specific exhibition, and the actual artworks displayed might differ from what we've discussed.</p>
 </td>
+  </tr>
+  
+</tbody>
+
+</table>
+
 
   
 **What are the most significant artworks presented?**
+
     
 <table style="text-align: left;">
   <thead>
@@ -251,8 +258,11 @@ From Michelangelo to Tiepolo:</p>
 </table>
 
 
+
+
+
   
-### Question 3
+### Question 3 (few-shot prompting)
 
 **I want you to generate a description of a cultural event in a concise and engaging way.**
 
