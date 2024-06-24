@@ -164,13 +164,19 @@ From Michelangelo to Tiepolo:</p>
   
 ### Question 3
 
-*I want you to generate a description of a cultural event in a concise and engaging way.*
-*Example:*
-*Event:* Venice Biennale
-*Description:* Venice Biennale, the oldest and most prestigious cultural institution in the world! This international exhibition, hosted annually by the Biennale Foundation in Venice, Italy, has been promoting new artistic trends and organizing international events in contemporary arts for over a century.
- *Now, write a description for this event: Esposizione d’arte italiana da Cimabue a Tiepolo*
-*Event:* Esposizione d’arte italiana da Cimabue a Tiepolo
-*Your Description:*
+**I want you to generate a description of a cultural event in a concise and engaging way.**
+
+**Example:**
+
+**Event:** Venice Biennale
+
+**Description:** Venice Biennale, the oldest and most prestigious cultural institution in the world! This international exhibition, hosted annually by the Biennale Foundation in Venice, Italy, has been promoting new artistic trends and organizing international events in contemporary arts for over a century.
+
+ **Now, write a description for this event: Esposizione d’arte italiana da Cimabue a Tiepolo**
+
+**Event:** Esposizione d’arte italiana da Cimabue a Tiepolo
+
+**Your Description:**
 
 <table>
   <thead>
@@ -187,13 +193,7 @@ From Michelangelo to Tiepolo:</p>
       </td>
       <td>
        <p>Event: Esposizione d’arte italiana da Cimabue a Tiepolo</p>
-      </td>
-      <td><p>Description: Journey through seven centuries of Italian art! This exhibition, though not currently on display, would have showcased a remarkable array of Italian masterpieces, from the groundbreaking works of Cimabue to the Venetian genius of Tiepolo. Explore the evolution of Italian art from the late medieval period to the 18th century and discover the beauty that defined a artistic movement.</p></td>
-    </tr>
-    <tr>
-      <td>Val A2</td>
-      <td>Val B2</td>
-      <td>Val C2</td>
+      <p>Description: Journey through seven centuries of Italian art! This exhibition, though not currently on display, would have showcased a remarkable array of Italian masterpieces, from the groundbreaking works of Cimabue to the Venetian genius of Tiepolo. Explore the evolution of Italian art from the late medieval period to the 18th century and discover the beauty that defined a artistic movement.</p></td>
     </tr>
   </tbody>
 </table>
