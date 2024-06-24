@@ -301,9 +301,13 @@ From Michelangelo to Tiepolo:</p>
 ### Question 4 (Chain-of-thought)
 
 **I want you to conduct a comprehensive research summary on Michelangelo Buonarroti, the renowned Italian artist. Please follow these steps:**
+
 **1.	Outline Michelangelo Buonarroti’s life and background:** Summarize his early life, education, personal experiences  and major life events that influenced his artistic journey.
+
 **2.	Analyze Michelangelo Buonarroti’s artistic style and techniques:** Describe the distinctive features of his artworks, the techniques he employed (e.g., color palettes, brushstrokes, subject matter).
+
 **3.	Explore Michelangelo Buonarroti’s artistic legacy:** Discuss his impact on art history, the evolution of his influence on contemporary art and culture, and his enduring popularity as a cultural icon.
+
 **4.	Conclude with a brief summary of Michelangelo Buonarroti’s significance:** Summarize his importance as a painter, sculptor, architect and poet of the High Renaissance
 
 
